@@ -1,0 +1,8 @@
+2018-05-27 21:27:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Ошибка преобразования данных при конвертации "'8/8' (SHIFT_TYPES: HOURS_CUANTITY INTEGER)"
+Data conversion error converting "'8/8' (SHIFT_TYPES: HOURS_CUANTITY INTEGER)"; SQL statement:
+INSERT INTO Shift_Types(id_shift_types, shift_name, hours_cuantity) VALUES (1, 24,'8/8' ) -- (1, 24, '8/8') [22018-197]
+2018-05-27 21:50:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "DOCTORSERRORS" не найдена
+Table "DOCTORSERRORS" not found; SQL statement:
+INSERT INTO DoctorsErrors(id_doctors_errors, error_scales, errors_character) VALUES (2, 1, 'В заполнении документации') [42102-197]
