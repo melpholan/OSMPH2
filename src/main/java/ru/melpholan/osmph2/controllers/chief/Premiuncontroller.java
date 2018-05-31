@@ -60,6 +60,9 @@ public class Premiuncontroller {
         SimpleDateFormat format = new SimpleDateFormat();
         format.applyPattern("yyyy-MM-dd");
 
+        map.addAttribute("datestart",start);
+        map.addAttribute("datefinish", finish);
+
 
         Date st = null;
         Date fin = null;
@@ -81,13 +84,6 @@ public class Premiuncontroller {
         List<Calls> callsList = callsRepo.findAllByDateOfCallIsBetween(st, fin);
 
 
-        System.err.println(callsList);
-        System.err.println(shiftsList);
-
-
-
-
-
         Map<Long, Result> doctorsResultList = PremCounter.getDoctorsResultList(callsList, shiftsList, m, c, n);
 
         System.out.println(doctorsResultList);
@@ -105,11 +101,11 @@ public class Premiuncontroller {
         map.addAttribute("personal", personalMap);
 
         map.addAttribute("resultlist",doctorsResultList);
-//
-//        double load = PremCounter.getLoadForPeriod(callsList,shiftsList);
-//
-//        map.addAttribute("load",load);
-//
+
+        double load = PremCounter.getLoadForPeriod(callsList,shiftsList);
+
+        map.addAttribute("load",load);
+
         return "/premiumlist";
 
     }

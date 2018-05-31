@@ -58,13 +58,13 @@ public class IndexController {
                 break;
 
             default:
+                personal.setName("Неверное сочетание логина и пароля !");
                 map.addAttribute("userNotFound","Неверное сочетание логина и пароля !");
-                req =  "index";
+                req =  "";
 
 
         }
 
-        System.out.println(req);
 //        return "redirect:"+req;
         return "redirect:"+req;
     }

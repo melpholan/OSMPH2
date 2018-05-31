@@ -2,6 +2,7 @@ package ru.melpholan.osmph2.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Objects;
 
 @Entity
 @Table(name = "DoctorsErrors")
@@ -56,5 +57,19 @@ public class DoctorsErrors implements Serializable {
                 "errorsCharacter='" + errorsCharacter + '\'' +
                 ", errorScale=" + errorScale +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        DoctorsErrors that = (DoctorsErrors) o;
+        return Objects.equals(getErrorScale(), that.getErrorScale());
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(getErrorScale());
     }
 }

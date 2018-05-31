@@ -15,13 +15,16 @@
     <link href="/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg">
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">-->
 </head>
+<header>
 <ul class="nav nav-tabs">
     <li role="presentation" ><a href="#">Home</a></li>
     <li role="presentation" class="active"><a href="zavotdpremium.html" th:href="@{/zavotdpremium}">Рассчитать премию</a></li>
     <li role="presentation"><a href="#">Посмотреть ошибки</a></li>
+    <li role="presentation"><a href="/" th:href="@{/}">Выйти</a></li>
 </ul>
 
-</head>
+</header>
+
 <body>
 
 <h1>Заведующий отдклением</h1>
@@ -43,6 +46,7 @@
         <th scope="col">Отчество</th>
         <th scope="col">Вызова</th>
         <th scope="col">Ошибки</th>
+        <th scope="col">Нагрузка</th>
         <th scope="col">Баллы</th>
         <th scope="col">Премия</th>
 
@@ -50,27 +54,54 @@
     </thead>
     <tbody>
 
-    <!--<ul>-->
-        <!--<li th:each="key: ${personal.keySet()}">-->
-            <!--<span th:text="${key}"></span> = <span th:text="${map.get(key)}"></span>-->
-        <!--</li>-->
-    <!--</ul>-->
+    <!--th:attrappend="class=${' ' + cssStyle}"-->
+    <!--'User is of type ' + (${user.isAdmin()} ? 'Administrator' : (${user.type} ?: 'Unknown'))-->
+    <!--th:classappend=" 'bg-danger' "-->
+    <!--<style>btn {-->
+        <!--background:#e4b9c0;-->
+    <!--}-->
+    <!--</style>-->
 
-    <tr th:each="itm :${personal.keySet()}">
+    <!--th:if="${linea.estado} == 'Iniciado'" class="label label-success" th:text="#{label.glineas.estado.iniciado}-->
+    <!--<a href="details.html" th:href="@{/order/details(orderId=${o.id})}">view</a>-->
+    <!--th:if="${resultlist.get(itm).getLoad()} < ${load} " th:attrappend="style='background:#e4b9c0'"-->
+    <tr th:each="itm :${personal.keySet()}"  >
 
         <th scope="row" th:text="${itm}"></th>
-        <td > <a th:href="@{${personal.get(itm)}}" th:text="${personal.get(itm).name}"></a></td>
+        <td > <a th:href="@{/errors/(id = ${itm}, start=${datestart}, finish=${datefinish})}" th:text="${personal.get(itm).name}"></a></td>
         <td th:text="${personal.get(itm).surname}"></td>
         <td th:text="${personal.get(itm).patronymic}"></td>
         <td th:text="${resultlist.get(itm).calls}"></td>
         <td th:text="${resultlist.get(itm).errors}"></td>
+        <td  th:text="${#numbers.formatDecimal(resultlist.get(itm).getLoad(),0 , 1)}"></td>
         <td th:text="${resultlist.get(itm).ball}"></td>
-        <td th:text="${resultlist.get(itm).premium}"></td>
+        <td th:text="${#numbers.formatDecimal(resultlist.get(itm).premium, 0,2)}"></td>
 
     </tr>
 
     </tbody>
 </table>
+
+<a href="#" th:href="@{/errordoctor}">Ошибки</a>
+
+<div style="padding: 30px 20px 20px 10px ">
+
+    <h2>
+
+<p style="color:dodgerblue" th:text="'Средняя нагрузка за период составила '+${#numbers.formatDecimal(load, 0, 1)}"></p>
+
+    </h2>
+
+</div>
+
+<h3>
+
+    <p style="color:red" th:text="'DATES '+${datestart} +'  '+${datefinish}"></p>
+
+</h3>
+
+</div>
+
 
 
 <script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>

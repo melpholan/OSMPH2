@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 
-<!DOCTYPE html>
+
 
 <head>
     <!-- Необходимые Мета-теги всегда на первом месте -->
@@ -15,31 +16,33 @@
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">-->
 </head>
 <body>
-<h1>Hello, world!</h1>
-
-
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="alert alert-info" data-th-text="${personal}">Первый дивHRLLLLLLLLLLLLLL</div>
-        </div>
-    </div>
-</div>
 
 
 
+<!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--<div class="col-lg-12">-->
+            <!--<h1>Подразделение скорой медицинской помощи</h1>-->
+            <!--&lt;!&ndash;<div class="alert alert-info">Подразделение скорой медицинской помощи</div>&ndash;&gt;-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 
-<p th:utext="${personal.pass}">PERRRRRRRRRRRRRRRRRS</p>
+
+
+
+<!--<p th:utext="${personal.pass}">PERRRRRRRRRRRRRRRRRS</p>-->
 
 <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />-->
 
 <style>
     /* Demo Background */
-    body{background:url(/images/bg/bg-6.png)}
+    body{background:#c4e3f3}
 
     /* Form Style */
     .form-horizontal{
         background: #fff;
+
         padding-bottom: 40px;
         border-radius: 15px;
         text-align: center;
@@ -165,7 +168,7 @@
 </style>
 
 <div class="container">
-    <div class="row">
+    <div class="row" style="padding-top: 50px">
 
         <div class="col-md-offset-3 col-md-6">
             <form class="form-horizontal" action="#" method="post" th:action="@{/}" th:object="${personal}">
@@ -180,7 +183,7 @@
                     <a href="#" class="fa fa-question-circle"></a>
                 </div>
                 <div class="form-group">
-                    <span th:utext="${userNotFound}"></span>
+                    <span th:utext="${personal.name}"></span>
 
                     <button type="submit" class="btn btn-default">ВХОД</button>
                 </div>

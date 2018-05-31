@@ -794,7 +794,7 @@ INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, docto
 INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 2, 1, 3);
 INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 2, 1, 3);
 INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 2, 1, 10);
-INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 2, , 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 2, 1, 1);
 
 
 INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-04', 2, 4);

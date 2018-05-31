@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 
-<!DOCTYPE html>
+
 
 <head>
     <!-- Необходимые Мета-теги всегда на первом месте -->
@@ -15,21 +16,27 @@
     <link href="/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg">
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">-->
 </head>
+
+<body>
+
 <header>
+
+
 <ul class="nav nav-tabs">
     <li role="presentation" ><a href="/zavotd.html" th:href="@{/zav}">Home</a></li>
     <li role="presentation" class="active"><a href="#">Рассчитать премию</a></li>
     <li role="presentation"><a href="#">Посмотреть ошибки</a></li>
+    <li role="presentation"><a href="/" th:href="@{/}">Выйти</a></li>
 </ul>
 
 </header>
-<body>
+
 
 <h1 style="margin-left:50px; margin-bottom: 50px">Заведующий отделением</h1>
 
 
 
-<form class="needs-validation"  method="get" action="/stvr" th:action="@{/premiumtable}">
+<form style="padding-bottom: 30px" class="needs-validation"  method="get" action="/stvr" th:action="@{/premiumtable}">
     <div class="form-row" style="margin-bottom:30px">
 
 
@@ -50,7 +57,7 @@
             </div>
         </div>
 
-        <div class="col-md-2 mb-3" style="margin-bottom:30px">
+        <div class="col-md-3 mb-3" style="margin-bottom:30px">
             <label for="start">Сумма </label>
             <input  type="number" class="form-control" id="cash" placeholder="Сумма" name="cash" required>
             <div class="valid-tooltip">
@@ -58,7 +65,7 @@
             </div>
         </div>
 
-        <div class="col-md-2 mb-3" style="margin-bottom:30px">
+        <div class="col-md-3 mb-3" style="margin-bottom:30px">
             <label for="coefficient">Коэффициент поощрения</label>
             <input  type="number" class="form-control" id="coefficient" name="coefficient"
                     value="0" min="0" max="1" step="0.01" required/>
@@ -80,31 +87,54 @@
 
 
 
-    <div class="form-row" style="margin-bottom:30px">
+    <!--<div class="form-row" style="margin-bottom:30px">-->
 
 
-        <div class="col-md-4 mb-3">
+        <!--<div class="col-md-4 mb-3">-->
 
-        </div>
+        <!--</div>-->
 
-        <div class="col-md-4 mb-3">
+        <!--<div class="col-md-4 mb-3">-->
 
-            <button class="btn btn-primary" type="submit">Рассчитать премию</button>
 
-            <!--<label for="result"></label>-->
 
-        </div>
 
-        <div class="col-md-4 mb-3">
+            <div class="container" style="margin-top: 100px">
+                <div class="row">
+                    <div class="col-sm-4">
 
-        </div>
-    </div>
+                    </div>
+                    <div class="col-sm-4">
+
+                        <button class="btn btn-primary btn-lg" type="submit">Рассчитать премию</button>
+
+                    </div>
+                    <div class="col-sm-4">
+
+                    </div>
+                </div>
+            </div>
+
+
 
 
 </form>
 
 
-
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+</ul>
 
 
 

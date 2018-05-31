@@ -17,6 +17,20 @@
     <!--margin-top: 30px;-->
     <!--margin-bottom: 30px-->
     <!--}-->
+    <style>
+        .btn {
+    align-content: center;
+    /*float: bottom;*/
+    font-size: 14px;
+    color: #fff;
+    background: #00b4ef;
+    border-radius: 30px;
+    padding: 10px 25px;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.5s ease 0s;
+    }
+    </style>
     <style class="row"
     margin-top="30px"
            margin-bottom="30px"></style>
@@ -31,10 +45,7 @@
     <li role="presentation" class="active"><a href="#">Записать вызова</a></li>
     <li role="presentation"><a href="#">Отеты</a></li>
     <li role="presentation"><a href="#">Персонал</a></li>
-    <li role="presentation" >
-
-
-    </li>
+    <li role="presentation"><a href="/" th:href="@{/}">Выйти</a></li>
 </ul>
 
 </header>
@@ -43,9 +54,9 @@
 
 
 
-<h1>
-    Старший врач  <span style="margin-left: 100px" th:utext="${time}">22/22/22</span>
-    <p>Старший врач  <span style="margin-left: 100px" th:text="Сегодня+'    '+${#dates.format(today,'dd MMMM yyyy')}">22/22/22</span></p>
+<h1 style="margin-left: 30px">
+
+    <p>Старший врач  <span style="margin-left: 100px" th:text="Сегодня+'    '+${#dates.format(today,'dd MM yyyy')}">22/22/22</span></p>
 </h1>
 
 <form class="needs-validation"  method="post" action="/stvr" th:action="@{/stvr}">
@@ -129,7 +140,7 @@
             <textarea name="prim" th:name="prim" th:value="${prim}" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             <!--<input type="text"  rows="3" class="form-control" id="validationTooltip03" placeholder="City" required>-->
             <div class="invalid-tooltip">
-                Please provide a valid city.
+
             </div>
         </div>
     </div>
