@@ -7,7 +7,7 @@ INSERT INTO Doctors_Errors(id_doctors_errors,  error_scales, errors_character) V
 INSERT INTO Doctors_Errors(id_doctors_errors,  error_scales, errors_character) VALUES (3,  2, 'Тактические');
 INSERT INTO Doctors_Errors(id_doctors_errors,  error_scales, errors_character) VALUES (4,  3, 'В лечении без последствий');
 INSERT INTO Doctors_Errors(id_doctors_errors,  error_scales, errors_character) VALUES (5,  4, 'В лечении с вредом');
-INSERT INTO Doctors_Errors(id_doctors_errors,  error_scales, errors_character) VALUES (0,  0, 'нет');
+INSERT INTO Doctors_Errors(id_doctors_errors,  error_scales, errors_character) VALUES (1,  0, 'нет');
 
 
 INSERT INTO Group_Result_Of_Doctors_Calls(id_calls, name_of_group_results,describe_group_result) VALUES (1, 'deaths','Смерть');
@@ -43,1325 +43,4833 @@ INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_p
 INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (9,'Авдюничева','Эльга','Ефремовна',NULL );
 INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (10,'Колесов','Илья','Васильевич',NULL );
 
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-02', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-11', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-10', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-20', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-26', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-25', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-12', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-07', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-24', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-17', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-05', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-04', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-09', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-14', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-15', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-01', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-14', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-21', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-20', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-04', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-22', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-20', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-20', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-20', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-06', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-18', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-28', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-26', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-10', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-12', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-18', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-09', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-07', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-02', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-12', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-04', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-20', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-22', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-18', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-23', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-24', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-07', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-27', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-18', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-20', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-23', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-23', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-06', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-12', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-24', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-27', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-14', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-07', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-13', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-20', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-25', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-17', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-23', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-20', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-08', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-18', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-23', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-20', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-23', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-14', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-24', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-25', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-07', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-26', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-11', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-11', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-22', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-02', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-07', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-15', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-01', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-05', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-15', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-22', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-07', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-21', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-15', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-05', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-10', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-14', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-07', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-27', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-07', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-02', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-26', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-15', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-26', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-09', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-08', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-04', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-04', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-15', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-14', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-09', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-28', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-26', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-07', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-20', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-07', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-13', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-28', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-13', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-24', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-11', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-23', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-21', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-18', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-05', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-10', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-17', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-10', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-20', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-21', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-25', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-21', 1, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-25', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-12', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-23', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-06', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-04', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-05', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-08', 1, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-14', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-02', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-12', 1, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-12', 1, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-14', 1, 4);
+--shifts and calls doc-1
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 1, 1, 9);
 
 
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-23', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-28', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-14', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-14', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-23', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-02', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-24', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-13', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-06', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-22', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-26', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-16', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-12', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-01', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-13', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-03', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-23', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-28', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-22', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-08', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-21', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-24', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-18', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-25', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-04', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-09', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-19', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-24', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-07', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-27', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-22', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-07', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-05', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-25', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-28', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-02', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-14', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-15', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-17', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-28', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-27', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-25', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-28', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-08', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-17', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-03', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-27', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-10', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-19', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-14', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-01', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-03', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-05', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-23', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-04', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-21', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-01', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-27', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-03', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-06', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-11', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-08', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-06', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-27', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-07', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-28', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-07', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-08', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-23', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-09', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-08', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-02', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-23', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-28', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-19', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-22', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-23', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-17', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-13', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-11', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-24', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-19', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-05', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-16', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-21', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-25', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-04', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-08', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-18', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-25', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-27', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-07', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-02', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-20', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-28', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-10', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-18', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-23', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-02', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-28', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-15', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-16', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-11', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-22', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-01', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-26', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-21', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-01', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-21', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-15', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-13', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-26', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-19', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-10', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-12', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-21', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-06', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-27', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-08', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-07', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-24', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-20', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-10', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-21', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-05', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-19', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-18', 2, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-02', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-19', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-26', 2, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-10', 2, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-25', 2, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-12', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-14', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-18', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-25', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-09', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-24', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-04', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-16', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-08', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-11', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-23', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-07', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-10', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-18', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-27', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-23', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-13', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-18', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-05', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-24', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-08', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-19', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-18', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-11', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-02', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-05', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-22', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-15', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-13', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-25', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-04', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-04', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-23', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-27', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-14', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-20', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-01', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-03', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-12', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-24', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-12', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-24', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-18', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-14', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-07', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-13', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-04', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-19', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-18', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-20', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-21', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-03', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-10', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-19', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-16', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-26', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-10', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-09', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-05', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-24', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-11', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-10', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-23', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-04', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-12', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-21', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-11', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-26', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-19', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-11', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-22', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-12', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-28', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-18', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-26', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-06', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-21', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-11', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-24', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-15', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-10', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-01', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-10', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-05', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-21', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-20', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-22', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-14', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-28', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-27', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-07', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-13', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-16', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-19', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-15', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-27', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-03', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-11', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-15', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-13', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-22', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-23', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-01', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-17', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-10', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-12', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-01', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-12', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-23', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-15', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-25', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-20', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-27', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-17', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-05', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-13', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-28', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-03', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-27', 3, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-21', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-13', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-22', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-05', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-07', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-18', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-14', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-01', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-27', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-20', 3, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-25', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-13', 3, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-18', 3, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-25', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-20', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-20', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-12', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-19', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-08', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-12', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-28', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-02', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-02', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-24', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-13', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-06', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-04', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-26', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-09', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-02', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-05', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-22', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-13', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-10', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-27', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-04', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-15', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-16', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-18', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-22', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-27', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-23', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-11', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-19', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-03', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-04', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-19', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-09', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-02', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-23', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-03', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-17', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-27', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-02', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-12', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-21', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-02', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-04', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-27', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-21', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-02', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-05', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-13', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-15', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-25', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-26', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-21', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-01', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-15', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-11', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-21', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-06', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-16', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-16', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-26', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-10', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-12', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-19', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-25', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-21', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-15', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-12', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-26', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-11', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-24', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-26', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-04', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-25', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-12', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-26', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-25', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-11', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-15', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-07', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-12', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-27', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-17', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-25', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-25', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-02', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-24', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-17', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-12', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-24', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-20', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-25', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-21', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-26', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-08', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-03', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-22', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-13', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-02', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-15', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-13', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-01', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-19', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-17', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-08', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-01', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-22', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-28', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-04', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-12', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-24', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-11', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-18', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-01', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-25', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-15', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-22', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-07', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-08', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-03', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-28', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-24', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-27', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-10', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-19', 4, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-07', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-20', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-03', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-28', 4, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-05', 4, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-25', 4, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-16', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-08', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-19', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-13', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-24', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-11', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-01', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-28', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-05', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-07', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-21', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-14', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-01', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-05', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-27', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-18', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-06', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-14', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-02', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-02', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-21', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-24', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-18', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-09', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-20', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-18', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-02', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-15', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-03', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-11', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-20', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-26', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-25', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-27', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-11', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-16', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-10', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-22', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-20', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-03', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-18', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-09', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-03', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-06', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-24', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-24', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-06', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-01', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-14', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-15', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-15', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-28', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-17', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-22', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-20', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-07', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-19', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-09', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-28', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-27', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-25', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-23', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-02', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-20', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-08', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-18', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-09', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-21', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-23', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-02', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-12', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-22', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-05', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-08', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-16', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-20', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-23', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-18', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-03', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-14', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-04', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-25', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-28', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-23', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-27', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-11', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-10', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-24', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-20', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-11', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-12', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-15', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-13', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-07', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-17', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-16', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-08', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-07', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-08', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-05', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-23', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-13', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-06', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-12', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-24', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-26', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-19', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-23', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-16', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-08', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-13', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-10', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-18', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-10', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-27', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-16', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-25', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-13', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-11', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-18', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-12', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-23', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-15', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-27', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-22', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-01', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-27', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-06', 5, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-27', 5, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-23', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-27', 5, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-01', 5, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-12', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-13', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-20', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-05', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-25', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-04', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-28', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-05', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-06', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-20', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-12', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-25', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-14', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-20', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-23', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-11', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-23', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-14', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-11', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-04', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-13', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-11', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-04', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-09', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-04', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-18', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-23', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-07', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-11', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-05', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-25', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-26', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-16', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-04', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-19', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-17', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-04', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-22', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-19', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-28', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-26', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-16', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-11', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-17', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-22', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-20', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-09', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-16', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-19', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-12', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-09', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-10', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-28', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-15', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-23', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-24', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-24', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-08', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-13', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-08', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-07', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-27', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-20', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-10', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-26', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-16', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-20', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-27', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-09', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-18', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-13', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-22', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-02', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-11', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-02', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-22', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-16', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-10', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-22', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-07', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-04', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-09', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-18', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-18', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-19', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-04', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-10', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-21', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-18', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-20', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-12', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-18', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-14', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-07', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-01', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-04', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-08', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-08', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-05', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-02', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-05', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-23', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-16', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-03', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-01', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-28', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-03', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-05', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-12', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-15', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-21', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-20', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-15', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-16', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-27', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-13', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-21', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-10', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-26', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-27', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-02', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-26', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-04', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-13', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-09', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-03', 6, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-13', 6, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-08', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-02', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-10', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-06', 6, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-24', 6, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-11', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-20', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-02', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-24', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-10', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-25', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-06', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-08', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-22', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-21', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-10', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-01', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-05', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-01', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-22', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-25', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-09', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-23', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-28', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-28', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-23', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-07', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-22', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-27', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-07', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-25', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-16', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-08', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-27', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-03', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-01', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-26', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-17', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-11', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-03', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-25', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-02', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-08', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-03', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-09', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-19', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-07', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-18', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-12', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-06', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-19', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-25', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-01', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-26', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-24', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-22', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-20', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-17', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-17', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-18', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-19', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-15', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-06', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-17', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-07', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-09', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-11', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-18', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-17', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-10', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-14', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-15', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-17', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-10', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-23', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-19', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-03', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-25', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-27', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-08', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-25', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-03', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-05', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-17', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-24', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-12', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-18', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-21', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-06', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-13', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-08', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-01', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-16', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-12', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-10', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-05', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-23', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-09', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-11', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-08', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-27', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-25', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-25', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-10', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-02', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-05', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-14', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-16', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-15', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-11', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-03', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-03', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-25', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-26', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-01', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-25', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-08', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-15', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-20', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-21', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-21', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-24', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-07', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-23', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-05', 7, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-19', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-20', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-22', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-03', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-18', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-17', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-07', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-19', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-26', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-14', 7, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-16', 7, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-21', 7, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-21', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-21', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-17', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-16', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-06', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-08', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-10', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-13', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-18', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-01', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-04', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-20', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-16', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-22', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-08', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-28', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-05', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-21', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-25', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-07', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-21', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-10', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-19', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-24', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-19', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-22', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-15', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-22', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-27', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-16', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-16', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-17', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-27', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-15', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-20', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-04', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-17', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-13', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-26', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-19', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-17', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-10', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-08', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-12', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-23', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-04', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-12', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-26', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-20', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-10', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-26', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-09', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-11', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-23', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-21', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-02', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-22', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-09', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-28', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-16', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-26', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-11', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-09', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-11', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-03', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-18', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-11', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-07', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-14', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-28', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-03', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-14', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-22', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-27', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-25', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-07', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-16', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-10', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-07', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-23', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-11', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-21', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-13', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-07', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-03', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-24', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-09', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-28', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-26', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-07', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-05', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-22', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-01', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-26', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-17', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-02', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-16', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-10', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-26', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-27', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-27', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-18', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-07', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-12', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-20', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-22', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-25', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-14', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-18', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-09', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-04', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-12', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-23', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-17', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-01', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-17', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-25', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-13', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-19', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-04', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-23', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-08', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-25', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-18', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-10', 8, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-13', 8, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-17', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-21', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-09', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-10', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-24', 8, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-19', 8, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-16', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-01', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-02', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-18', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-03', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-25', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-25', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-04', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-26', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-11', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-26', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-15', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-21', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-23', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-21', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-14', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-23', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-06', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-23', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-19', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-11', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-11', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-03', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-10', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-13', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-04', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-23', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-19', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-07', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-16', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-04', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-12', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-13', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-21', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-18', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-01', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-06', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-16', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-26', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-19', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-03', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-07', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-17', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-14', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-23', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-05', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-17', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-16', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-04', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-26', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-08', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-17', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-15', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-05', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-14', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-05', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-23', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-09', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-28', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-26', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-01', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-23', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-19', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-11', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-26', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-14', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-03', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-22', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-17', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-02', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-04', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-05', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-28', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-13', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-02', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-10', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-27', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-11', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-17', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-04', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-27', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-05', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-28', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-09', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-05', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-15', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-14', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-14', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-21', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-12', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-22', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-05', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-27', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-26', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-03', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-06', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-10', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-03', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-06', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-11', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-22', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-08', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-06', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-01', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-23', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-13', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-13', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-03', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-11', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-28', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-22', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-17', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-05', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-07', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-19', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-13', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-18', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-24', 9, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-13', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-19', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-01', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-14', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-13', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-20', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-15', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-19', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-28', 9, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-14', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-12', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-24', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-28', 9, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-19', 9, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-24', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-27', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-26', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-19', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-16', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-20', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-03', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-09', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-19', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-01', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-05', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-17', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-12', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-22', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-28', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-18', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-15', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-28', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-19', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-26', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-22', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-17', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-16', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-02', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-22', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-03', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-17', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-10', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-26', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-14', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-19', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-26', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-01', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-21', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-05', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-25', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-10', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-03', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-22', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-17', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-05', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-16', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-20', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-08', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-16', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-26', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-19', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-04', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-10', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-03', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-28', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-23', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-17', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-24', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-22', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-22', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-26', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-02', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-16', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-23', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-20', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-24', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-23', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-09', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-03', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-28', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-19', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-01', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-17', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-09', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-06', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-13', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-10', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-07', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-20', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-27', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-24', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-15', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-07', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-09', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-20', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-28', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-25', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-23', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-01', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-08', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-04', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-22', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-01', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-22', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-25', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-05', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-27', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-06', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-25', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-13', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-16', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-18', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-07', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-23', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-19', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-02', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-14', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-12', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-04', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-07', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-24', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-23', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-24', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-01', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-27', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-17', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-19', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-14', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-12', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-21', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-11', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-20', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-16', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-05', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-01-27', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-02-15', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-03-20', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-04-22', 10, 2);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-05-04', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-06-09', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-07-11', 10, 4);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-08-16', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-09-05', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-10-02', 10, 1);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-11-22', 10, 3);
-INSERT INTO Shifts( work_date, personal_id_personal, shift_types_id_shift_types) VALUES( '2017-12-14', 10, 2);
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-01', 1, 1);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 1, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-04', 1, 3);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 1, 1, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-07', 1, 3);
+
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 1, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-10', 1, 1);
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 1, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-13', 1, 1);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 1, 2, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 1, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-16', 1, 1);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 1, 1, 9);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-19', 1, 1);
+
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 1, 1, 7);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-22', 1, 4);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 1, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-25', 1, 1);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 1, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-27', 1, 1);
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 1, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-29', 1, 1);
+
+-- 04-2018
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 1, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-01', 1, 3);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 1, 1, 6);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-04', 1, 3);
+
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 1, 1, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-07', 1, 3);
+
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 1, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-10', 1, 3);
+
+
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 1, 1, 9);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-13', 1, 1);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 1, 1, 3);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-15', 1, 3);
+
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 1, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-18', 1, 2);
+
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 1, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-20', 1, 4);
+
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 1, 1, 7);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-23', 1, 3);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 1, 1, 9);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-26', 1, 2);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 1, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-29', 1, 1);
+
+
+
+-- 05-2018 doctor 1
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 1, 1, 9);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-01', 1, 3);
+
+
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 1, 1, 1);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-04', 1, 1);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 1, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-07', 1, 4);
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 1, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-10', 1, 1);
+
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 1, 1, 3);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-13', 1, 2);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 1, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-16', 1, 1);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 1, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 1, 1, 3);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-19', 1, 1);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 1, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-22', 1, 4);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 1, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 1, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-25', 1, 4);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 1, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 1, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 1, 1, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-27', 1, 1);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 1, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 1, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 1, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 1, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 1, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 1, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 1, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 1, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 1, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 1, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 1, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-29', 1, 1);
+
+
+
+
+-- doctor 2
+--03-2018
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 2, 2, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 2, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 2, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 2, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 2, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 2, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 2, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 2, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 2, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 2, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 2, 1, 7);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-01', 2, 4);
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 2, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 2, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 2, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 2, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 2, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 2, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 2, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 2, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 2, , 1);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-04', 2, 4);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 2, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 2, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 2, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 2, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 2, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 2, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 2, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 2, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 2, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 2, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 2, 5, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-07', 2, 2);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 2, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 2, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 2, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 2, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 2, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 2, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 2, 1, 7);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-10', 2, 1);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 2, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 2, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 2, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 2, 3, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 2, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 2, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-13', 2, 1);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 2, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 2, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 2, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 2, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 2, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 2, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 2, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 2, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-16', 2, 1);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 2, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 2, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 2, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 2, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 2, 2, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-19', 2, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 2, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 2, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 2, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 2, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 2, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 2, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 2, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 2, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-22', 2, 4);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 2, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 2, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 2, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 2, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 2, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 2, 1, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-25', 2, 2);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 2, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 2, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 2, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 2, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-28', 2, 3);
+
+
+--04-2018 doc 2
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 2, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 2, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 2, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 2, 1, 3);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-01', 2, 3);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 2, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 2, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 2, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 2, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 2, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 2, 4, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-04', 2, 2);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 2, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 2, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 2, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 2, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 2, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 2, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 2, 1, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-07', 2, 4);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 2, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 2, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 2, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 2, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 2, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-10', 2, 3);
+
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 2, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 2, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 2, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 2, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 2, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 2, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-13', 2, 1);
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 2, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 2, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 2, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 2, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 2, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 2, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 2, 5, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 2, 1, 7);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-16', 2, 1);
+
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 2, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 2, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 2, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 2, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 2, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 2, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-19', 2, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 2, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 2, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 2, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 2, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 2, 1, 1);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-22', 2, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 2, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 2, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 2, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 2, 1, 1);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-25', 2, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 2, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 2, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 2, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 2, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 2, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 2, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-28', 2, 2);
+
+
+--05-2018  doc 2
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 2, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 2, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 2, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 2, 2, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 2, 1, 6);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-01', 2, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 2, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 2, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 2, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 2, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 2, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 2, 1, 7);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-04', 2, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 2, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 2, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 2, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 2, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 2, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 2, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 2, 3, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-07', 2, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 2, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 2, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 2, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 2, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-10', 2, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 2, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 2, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 2, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 2, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 2, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 2, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-13', 2, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 2, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 2, 1, 3);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-16', 2, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 2, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 2, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 2, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 2, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 2, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 2, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-19', 2, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 2, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 2, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 2, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 2, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 2, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-22', 2, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 2, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 2, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 2, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 2, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 2, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 2, 1, 6);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-25', 2, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 2, 4, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 2, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 2, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 2, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 2, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 2, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 2, 1, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-28', 2, 2);
+
+
+
+
+--doctor 3
+--03-2018
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 3, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 3, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 3, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 3, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 3, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 3, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 3, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-01', 3, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 3, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 3, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 3, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 3, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 3, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 3, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-04', 3, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 3, 2, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 3, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 3, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 3, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 3, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 3, 1, 6);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-07', 3, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 3, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 3, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 3, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 3, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 3, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 3, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 3, 1, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-10', 3, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 3, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 3, 5, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 3, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 3, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 3, 1, 6);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-13', 3, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 3, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 3, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 3, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 3, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 3, 1, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-16', 3, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 3, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 3, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 3, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 3, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 3, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 3, 1, 9);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-19', 3, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 3, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 3, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 3, 3, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 3, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 3, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 3, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 3, 1, 3);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-22', 3, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 3, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 3, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 3, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 3, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 3, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 3, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-25', 3, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 3, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 3, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 3, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 3, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 3, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 3, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-28', 3, 2);
+
+
+
+--doc 3 04-2018
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 3, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 3, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 3, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 3, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 3, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 3, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 3, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 3, 1, 3);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-01', 3, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 3, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 3, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 3, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 3, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 3, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 3, 2, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-04', 3, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 3, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 3, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 3, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 3, 3, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 3, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 3, 1, 3);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-07', 3, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 3, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 3, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 3, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 3, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 3, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-10', 3, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 3, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 3, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 3, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 3, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 3, 1, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-13', 3, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 3, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 3, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 3, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 3, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 3, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 3, 1, 7);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-16', 3, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 3, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 3, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 3, 2, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 3, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-19', 3, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 3, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 3, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 3, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 3, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 3, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 3, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 3, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-22', 3, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 3, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 3, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 3, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 3, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 3, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 3, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 3, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 3, 1, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-25', 3, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 3, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 3, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 3, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 3, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 3, 1, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-28', 3, 3);
+
+
+
+--doc3 05-2018
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 3, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 3, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 3, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 3, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 3, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 3, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 3, 1, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-01', 3, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 3, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 3, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 3, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 3, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 3, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 3, 1, 3);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-04', 3, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 3, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 3, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 3, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 3, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 3, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-07', 3, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 3, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 3, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 3, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 3, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 3, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 3, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 3, 1, 7);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-10', 3, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 3, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 3, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 3, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 3, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 3, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 3, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 3, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-13', 3, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 3, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 3, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 3, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 3, 3, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-16', 3, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 3, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 3, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 3, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 3, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 3, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-19', 3, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 3, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 3, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 3, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 3, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 3, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 3, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 3, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-22', 3, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 3, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 3, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 3, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 3, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 3, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 3, 4, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 3, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-25', 3, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 3, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 3, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 3, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 3, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 3, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 3, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 3, 1, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-28', 3, 3);
+
+
+
+--doctor 4 03-2018
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 4, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 4, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 4, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 4, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 4, 1, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-01', 4, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 4, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 4, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 4, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 4, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 4, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-04', 4, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 4, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 4, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 4, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 4, 2, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 4, 1, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-07', 4, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 4, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 4, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 4, 3, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 4, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 4, 1, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-10', 4, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 4, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 4, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 4, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-13', 4, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 4, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 4, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 4, 1, 7);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-16', 4, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 4, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 4, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 4, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 4, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 4, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 4, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-19', 4, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 4, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 4, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 4, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 4, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 4, 2, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 4, 1, 3);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-22', 4, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 4, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 4, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 4, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 4, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 4, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 4, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-25', 4, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 4, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 4, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 4, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 4, 4, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 4, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-28', 4, 1);
+
+
+
+--doc 4 04-2018
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 4, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 4, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 4, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 4, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 4, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 4, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 4, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 4, 1, 7);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-01', 4, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 4, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 4, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 4, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 4, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-04', 4, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 4, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 4, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 4, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 4, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 4, 2, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 4, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 4, 1, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-07', 4, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 4, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 4, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 4, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 4, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 4, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 4, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-10', 4, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 4, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 4, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 4, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 4, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 4, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 4, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 4, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 4, 1, 9);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-13', 4, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 4, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 4, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 4, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 4, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 4, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 4, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 4, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 4, 1, 9);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-16', 4, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 4, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 4, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 4, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 4, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 4, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 4, 1, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-19', 4, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 4, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 4, 3, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 4, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 4, 1, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-22', 4, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 4, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 4, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 4, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 4, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 4, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 4, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 4, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-25', 4, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 4, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 4, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 4, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 4, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 4, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 4, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 4, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 4, 1, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-28', 4, 2);
+
+
+
+--doc4 05-2018
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 4, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 4, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 4, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 4, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 4, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 4, 1, 9);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-01', 4, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 4, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 4, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 4, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 4, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 4, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 4, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 4, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-04', 4, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 4, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 4, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 4, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 4, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 4, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 4, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-07', 4, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 4, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 4, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 4, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 4, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 4, 2, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-10', 4, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 4, 4, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 4, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 4, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 4, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 4, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 4, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 4, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 4, 1, 7);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-13', 4, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 4, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 4, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 4, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 4, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 4, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 4, 1, 1);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-16', 4, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 4, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 4, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 4, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 4, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-19', 4, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 4, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 4, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 4, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 4, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-22', 4, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 4, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 4, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 4, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 4, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 4, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 4, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 4, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-25', 4, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 4, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 4, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 4, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 4, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 4, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 4, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 4, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 4, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 4, 1, 1);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-28', 4, 2);
+
+
+
+--doctor 5 03-2018
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-02', 'Результат', 5, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-02', 'Результат', 5, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-02', 'Результат', 5, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-02', 'Результат', 5, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-02', 5, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-05', 'Результат', 5, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-05', 'Результат', 5, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-05', 'Результат', 5, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-05', 'Результат', 5, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-05', 5, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-08', 'Результат', 5, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-08', 'Результат', 5, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-08', 'Результат', 5, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-08', 'Результат', 5, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-08', 5, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-11', 'Результат', 5, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-11', 'Результат', 5, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-11', 'Результат', 5, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-11', 'Результат', 5, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-11', 5, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-14', 'Результат', 5, 2, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-14', 'Результат', 5, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-14', 'Результат', 5, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-14', 'Результат', 5, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-14', 5, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-17', 'Результат', 5, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-17', 'Результат', 5, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-17', 'Результат', 5, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-17', 'Результат', 5, 1, 9);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-17', 5, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-20', 'Результат', 5, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-20', 'Результат', 5, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-20', 'Результат', 5, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-20', 'Результат', 5, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-20', 'Результат', 5, 2, 6);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-20', 5, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-23', 'Результат', 5, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-23', 'Результат', 5, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-23', 'Результат', 5, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-23', 'Результат', 5, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-23', 'Результат', 5, 1, 9);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-23', 5, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-26', 'Результат', 5, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-26', 'Результат', 5, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-26', 'Результат', 5, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-26', 'Результат', 5, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-26', 'Результат', 5, 1, 7);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-26', 5, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 5, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 5, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 5, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 5, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 5, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-29', 5, 4);
+
+--doc5 04-2018
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 5, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 5, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 5, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 5, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 5, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-02', 5, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 5, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 5, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 5, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 5, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 5, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-05', 5, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 5, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 5, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 5, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 5, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 5, 1, 3);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-08', 5, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 5, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 5, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 5, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 5, 3, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 5, 1, 3);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-11', 5, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 5, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 5, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 5, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 5, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 5, 1, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-14', 5, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 5, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 5, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 5, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 5, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 5, 1, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-17', 5, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 5, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 5, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 5, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 5, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 5, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-20', 5, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 5, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 5, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 5, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 5, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 5, 1, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-23', 5, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 5, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 5, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 5, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 5, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 5, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 5, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-26', 5, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 5, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 5, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 5, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 5, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 5, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 5, 1, 3);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-29', 5, 1);
+
+--doc5 05-2018
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 5, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 5, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 5, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 5, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 5, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 5, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-02', 5, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 5, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 5, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 5, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 5, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 5, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 5, 1, 9);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-05', 5, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 5, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 5, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 5, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 5, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 5, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 5, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-08', 5, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 5, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 5, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 5, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 5, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 5, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 5, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-11', 5, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 5, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 5, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 5, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 5, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 5, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 5, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-14', 5, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 5, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 5, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 5, 2, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 5, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 5, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 5, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-17', 5, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 5, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 5, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 5, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 5, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 5, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 5, 1, 6);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-20', 5, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 5, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 5, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 5, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 5, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 5, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 5, 1, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-23', 5, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 5, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 5, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 5, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 5, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 5, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 5, 2, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-26', 5, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 5, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 5, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 5, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 5, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 5, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 5, 3, 7);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-29', 5, 4);
+
+
+--doctor6 03-2018
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-02', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-02', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-02', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-02', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-02', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-02', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-02', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-02', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-02', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-02', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-02', 'Результат', 6, 2, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-02', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-02', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-02', 'Результат', 6, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-02', 6, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-05', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-05', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-05', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-05', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-05', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-05', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-05', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-05', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-05', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-05', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-05', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-05', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-05', 'Результат', 6, 3, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-05', 'Результат', 6, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-05', 6, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-08', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-08', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-08', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-08', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-08', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-08', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-08', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-08', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-08', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-08', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-08', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-08', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-08', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-08', 'Результат', 6, 5, 3);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-08', 6, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-11', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-11', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-11', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-11', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-11', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-11', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-11', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-11', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-11', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-11', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-11', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-11', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-11', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-11', 'Результат', 6, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-11', 6, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-14', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-14', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-14', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-14', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-14', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-14', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-14', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-14', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-14', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-14', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-14', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-14', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-14', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-14', 'Результат', 6, 1, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-14', 6, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-17', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-17', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-17', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-17', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-17', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-17', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-17', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-17', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-17', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-17', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-17', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-17', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-17', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-17', 'Результат', 6, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-17', 6, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-20', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-20', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-20', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-20', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-20', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-20', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-20', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-20', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-20', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-20', 'Результат', 6, 3, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-20', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-20', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-20', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-20', 'Результат', 6, 1, 6);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-20', 6, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-23', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-23', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-23', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-23', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-23', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-23', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-23', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-23', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-23', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-23', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-23', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-23', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-23', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-23', 'Результат', 6, 1, 9);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-23', 6, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-26', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-26', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-26', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-26', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-26', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-26', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-26', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-26', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-26', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-26', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-26', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-26', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-26', 'Результат', 6, 2, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-26', 'Результат', 6, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-26', 6, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-29', 'Результат', 6, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-29', 6, 1);
+
+
+
+--doc 6 04-2018
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 6, 3, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-02', 'Результат', 6, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-02', 6, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-05', 'Результат', 6, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-05', 6, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-08', 'Результат', 6, 3, 6);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-08', 6, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-11', 'Результат', 6, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-11', 6, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-14', 'Результат', 6, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-14', 6, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-17', 'Результат', 6, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-17', 6, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-20', 'Результат', 6, 1, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-20', 6, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 6, 2, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-23', 'Результат', 6, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-23', 6, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 6, 3, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-26', 'Результат', 6, 1, 3);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-26', 6, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-29', 'Результат', 6, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-29', 6, 4);
+
+
+
+--doc6 05-2018
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 6, 2, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-02', 'Результат', 6, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-02', 6, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-05', 'Результат', 6, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-05', 6, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-08', 'Результат', 6, 2, 6);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-08', 6, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-11', 'Результат', 6, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-11', 6, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 6, 3, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-14', 'Результат', 6, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-14', 6, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-17', 'Результат', 6, 1, 6);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-17', 6, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-20', 'Результат', 6, 1, 3);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-20', 6, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 6, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-23', 'Результат', 6, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-23', 6, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 6, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-26', 'Результат', 6, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-26', 6, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 6, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 6, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 6, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 6, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 6, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 6, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 6, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 6, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 6, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 6, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 6, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 6, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-29', 'Результат', 6, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-29', 6, 1);
+
+
+
+--doctor 7 03-2018
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 7, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 7, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 7, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 7, 2, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 7, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-03', 7, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 7, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 7, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 7, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 7, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 7, 1, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-06', 7, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 7, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 7, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 7, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 7, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 7, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-09', 7, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 7, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 7, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 7, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 7, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 7, 1, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-12', 7, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 7, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 7, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 7, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 7, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 7, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-15', 7, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 7, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 7, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 7, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 7, 2, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 7, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-18', 7, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 7, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 7, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 7, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 7, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 7, 1, 6);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-21', 7, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 7, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 7, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 7, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 7, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 7, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-24', 7, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 7, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 7, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 7, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 7, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 7, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-27', 7, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 7, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 7, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 7, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 7, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 7, 2, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-30', 7, 1);
+
+
+
+--doc7 04-2018
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 7, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 7, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 7, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 7, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 7, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-03', 7, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 7, 3, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 7, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 7, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 7, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 7, 1, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-06', 7, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 7, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 7, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 7, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 7, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 7, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-09', 7, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 7, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 7, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 7, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 7, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 7, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-12', 7, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 7, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 7, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 7, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 7, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 7, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-15', 7, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 7, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 7, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 7, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 7, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 7, 1, 9);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-18', 7, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 7, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 7, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 7, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 7, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 7, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-21', 7, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 7, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 7, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 7, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 7, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 7, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 7, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 7, 3, 6);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-24', 7, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 7, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 7, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 7, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 7, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 7, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 7, 2, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 7, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-27', 7, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 7, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 7, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 7, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 7, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 7, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 7, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 7, 1, 1);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-30', 7, 2);
+
+
+
+--doc 7 05-2018
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 7, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 7, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 7, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 7, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 7, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 7, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 7, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-03', 7, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 7, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 7, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 7, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 7, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 7, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 7, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 7, 1, 6);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-06', 7, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 7, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 7, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 7, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 7, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 7, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 7, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 7, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-09', 7, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 7, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 7, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 7, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 7, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 7, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 7, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 7, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-12', 7, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 7, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 7, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 7, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 7, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 7, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 7, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 7, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-15', 7, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 7, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 7, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 7, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 7, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 7, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 7, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 7, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-18', 7, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 7, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 7, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 7, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 7, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 7, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 7, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 7, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 7, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 7, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-21', 7, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 7, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 7, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 7, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 7, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 7, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 7, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 7, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 7, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 7,1 , 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-24', 7, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 7, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 7, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 7, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 7, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 7, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 7, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 7, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 7, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 7, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-27', 7, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 7, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 7, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 7, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 7, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 7, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 7, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 7, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 7, 2, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 7, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-30', 7, 4);
+
+
+
+--doctor 8 03-2018
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 8, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-03', 8, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 8, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-06', 8, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 8, 2, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 8, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-09', 8, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 8, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-12', 8, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 8, 1, 6);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-15', 8, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 8, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-18', 8, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 8, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-21', 8, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 8, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-24', 8, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 8, 1, 7);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-27', 8, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 8, 2, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-30', 8, 4);
+
+
+
+--doc 8 04-2018
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 8, 3, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 8, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-03', 8, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 8, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-06', 8, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 8, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-09', 8, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 8, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-12', 8, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 8, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-15', 8, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 8, 1, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-18', 8, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 8, 1, 1);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-21', 8, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 8, 2, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 8, 1, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-24', 8, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 8, 1, 6);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-27', 8, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 8, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-30', 8, 4);
+
+--doc 8 05-2018
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 8, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-03', 8, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 8, 3, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 8, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-06', 8, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 8, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-09', 8, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 8, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-12', 8, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 8, 3, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-15', 8, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 8, 1, 1);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-18', 8, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 8, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-21', 8, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 8, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 8, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 8, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 8, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 8, 1, 1);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-24', 8, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 8, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 8, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 8, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 8, 4, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 8, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-27', 8, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 8, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 8, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 8, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 8, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 8, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 8, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 8, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 8, 1, 1);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-30', 8, 3);
+
+
+
+--doctor 9 03-2018
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 9, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 9, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 9, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 9, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 9, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-03', 'Результат', 9, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-03', 9, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 9, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 9, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 9, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 9, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-06', 'Результат', 9, 1, 9);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-06', 9, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 9, 2, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 9, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 9, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-09', 'Результат', 9, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-09', 9, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 9, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 9, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 9, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 9, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 9, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-12', 'Результат', 9, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-12', 9, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 9, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 9, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-15', 'Результат', 9, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-15', 9, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 9, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 9, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 9, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 9, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 9, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-18', 'Результат', 9, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-18', 9, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 9, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 9, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 9, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 9, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-21', 'Результат', 9, 2, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-21', 9, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 9, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 9, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 9, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 9, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-24', 'Результат', 9, 1, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-24', 9, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 9, 2, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 9, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-27', 'Результат', 9, 1, 1);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-27', 9, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 9, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 9, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 9, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 9, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-30', 'Результат', 9, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-30', 9, 2);
+
+
+
+--doc 9 04-2018
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 9, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 9, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 9, 2, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-03', 'Результат', 9, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-03', 9, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 9, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 9, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 9, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 9, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 9, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 9, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-06', 'Результат', 9, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-06', 9, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 9, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 9, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-09', 'Результат', 9, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-09', 9, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 9, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 9, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 9, 3, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-12', 'Результат', 9, 1, 3);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-12', 9, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 9, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 9, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 9, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 9, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 9, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 9, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-15', 'Результат', 9, 1, 9);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-15', 9, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 9, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 9, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 9, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 9, 5, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-18', 'Результат', 9, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-18', 9, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 9, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 9, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-21', 'Результат', 9, 1, 9);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-21', 9, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 9, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 9, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 9, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-24', 'Результат', 9, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-24', 9, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 9, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 9, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 9, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 9, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 9, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 9, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-27', 'Результат', 9, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-27', 9, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 9, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 9, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 9, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 9, 2, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-30', 'Результат', 9, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-30', 9, 3);
+
+
+--doc9 05-2018
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 9, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 9, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-03', 'Результат', 9, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-03', 9, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 9, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 9, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 9, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 9, 2, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 9, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-06', 'Результат', 9, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-06', 9, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 9, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 9, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-09', 'Результат', 9, 1, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-09', 9, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 9, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 9, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 9, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 9, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 9, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 9, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-12', 'Результат', 9, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-12', 9, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 9, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 9, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 9, 2, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-15', 'Результат', 9, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-15', 9, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 9, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 9, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 9, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 9, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 9, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 9, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-18', 'Результат', 9, 3, 1);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-18', 9, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 9, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-21', 'Результат', 9, 1, 7);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-21', 9, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 9, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-24', 'Результат', 9, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-24', 9, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 9, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 9, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 9, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 9, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 9, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 9, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-27', 'Результат', 9, 1, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-27', 9, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 9, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 9, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 9, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 9, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 9, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 9, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 9, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 9, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 9, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 9, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-30', 'Результат', 9, 1, 7);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-30', 9, 1);
+
+
+
+--doctor10 03-2018
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-01', 'Результат', 10, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-01', 10, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 10, 2, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-04', 'Результат', 10, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-04', 10, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-07', 'Результат', 10, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-07', 10, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 10, 2, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-10', 'Результат', 10, 1, 9);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-10', 10, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-13', 'Результат', 10, 1, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-13', 10, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-16', 'Результат', 10, 1, 1);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-16', 10, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-19', 'Результат', 10, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-19', 10, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 10, 2, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-22', 'Результат', 10, 1, 11);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-22', 10, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-25', 'Результат', 10, 1, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-25', 10, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-03-28', 'Результат', 10, 1, 1);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-03-28', 10, 1);
+
+
+--doc10 04-2018
+
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 10, 2, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-01', 'Результат', 10, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-01', 10, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-04', 'Результат', 10, 1, 2);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-04', 10, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-07', 'Результат', 10, 1, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-07', 10, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 10, 2, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-10', 'Результат', 10, 1, 1);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-10', 10, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-13', 'Результат', 10, 1, 6);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-13', 10, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-16', 'Результат', 10, 1, 3);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-16', 10, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-19', 'Результат', 10, 1, 7);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-19', 10, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-22', 'Результат', 10, 1, 3);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-22', 10, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-25', 'Результат', 10, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-25', 10, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-04-28', 'Результат', 10, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-04-28', 10, 1);
+
+
+
+
+--doc 10 05-2018
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-01', 'Результат', 10, 3, 1);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-01', 10, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-04', 'Результат', 10, 1, 12);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-04', 10, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-07', 'Результат', 10, 1, 4);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-07', 10, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-10', 'Результат', 10, 1, 7);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-10', 10, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-13', 'Результат', 10, 1, 13);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-13', 10, 1);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-16', 'Результат', 10, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-16', 10, 2);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-19', 'Результат', 10, 1, 10);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-19', 10, 3);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 10, 4, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-22', 'Результат', 10, 1, 8);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-22', 10, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 10, 1, 11);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 10, 1, 12);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 10, 1, 4);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-25', 'Результат', 10, 3, 5);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-25', 10, 4);
+
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 1, 9);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 1, 8);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 1, 6);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 1, 10);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 1, 14);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 1, 1);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 1, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 1, 3);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 2, 2);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 1, 13);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 1, 5);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 1, 7);
+INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, doctors_errors_id_doctors_errors, result_of_doctors_calls_id_result_of_doctor_calls) VALUES ( '2018-05-28', 'Результат', 10, 1, 14);
+
+
+INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-28', 10, 2);
+

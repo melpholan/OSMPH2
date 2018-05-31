@@ -15,6 +15,7 @@ import ru.melpholan.osmph2.model.Shifts;
 import ru.melpholan.osmph2.repo.CallsRepo;
 import ru.melpholan.osmph2.repo.PersonalRepository;
 import ru.melpholan.osmph2.repo.ShiftRepository;
+import ru.melpholan.osmph2.repo.ShiftsDao;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -25,6 +26,9 @@ import java.util.Map;
 
 @Controller
 public class Premiuncontroller {
+
+    @Autowired
+    ShiftsDao shiftsDao;
 
     @Autowired
     CallsRepo callsRepo;
@@ -54,7 +58,7 @@ public class Premiuncontroller {
 
 
         SimpleDateFormat format = new SimpleDateFormat();
-        format.applyPattern("yyyy-mm-dd");
+        format.applyPattern("yyyy-MM-dd");
 
 
         Date st = null;
@@ -65,6 +69,9 @@ public class Premiuncontroller {
 
         try {
             st= format.parse(start);
+
+            System.out.println("date start "+st);
+
             fin= format.parse(finish);
         } catch (ParseException e) {
             e.printStackTrace();
@@ -73,9 +80,17 @@ public class Premiuncontroller {
         List<Shifts> shiftsList = shiftRepository.findAllByWorkDateBetween(st, fin);
         List<Calls> callsList = callsRepo.findAllByDateOfCallIsBetween(st, fin);
 
+
+        System.err.println(callsList);
+        System.err.println(shiftsList);
+
+
+
+
+
         Map<Long, Result> doctorsResultList = PremCounter.getDoctorsResultList(callsList, shiftsList, m, c, n);
 
-        System.err.println("==============================doctorsResultList  "+ doctorsResultList);
+        System.out.println(doctorsResultList);
         Iterable<Personal> personals = personalRepository.findAll();
 
         Map<Long,Personal> personalMap = new HashMap<>();
@@ -90,11 +105,11 @@ public class Premiuncontroller {
         map.addAttribute("personal", personalMap);
 
         map.addAttribute("resultlist",doctorsResultList);
-
-        double load = PremCounter.getLoadForPeriod(callsList,shiftsList);
-
-        map.addAttribute("load",load);
-
+//
+//        double load = PremCounter.getLoadForPeriod(callsList,shiftsList);
+//
+//        map.addAttribute("load",load);
+//
         return "/premiumlist";
 
     }

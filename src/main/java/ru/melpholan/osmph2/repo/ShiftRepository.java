@@ -11,6 +11,8 @@ public interface ShiftRepository extends CrudRepository<Shifts, Long> {
 
     List<Shifts>  findAllByWorkDateBetween(Date start, Date end);
 
+    List<Shifts> findAllByWorkDate(Date date);
+
 
 
 }
