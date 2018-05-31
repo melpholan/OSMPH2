@@ -20,6 +20,17 @@ public class ResultOfDoctorsCalls implements Serializable {
         this.idResultOfDoctorCalls = idResultOfDoctorCalls;
     }
 
+    @Column(name = "rus_describe_result")
+    private String rus_describe_result;
+
+    public String getRus_describe_result() {
+        return rus_describe_result;
+    }
+
+    public void setRus_describe_result(String rus_describe_result) {
+        this.rus_describe_result = rus_describe_result;
+    }
+
     @Column(name = "typeOfResult")
     private String typeOfResult;
 
@@ -55,7 +66,7 @@ public class ResultOfDoctorsCalls implements Serializable {
     public String toString() {
         return "ResultOfDoctorsCalls{" +
                 "typeOfResult='" + typeOfResult + '\'' +
-                //   ", groupResultOfDoctorsCalls=" + groupResultOfDoctorsCalls +
+                   ", rus_describe_result, =" + rus_describe_result  +
                 '}';
     }
 }

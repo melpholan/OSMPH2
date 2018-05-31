@@ -15,7 +15,7 @@ public class PersonalController {
     PersonalRepository personalRepository;
 
 
-    @GetMapping("/persn")
+    @GetMapping("/zav")
     public String getPersonal(ModelMap map){
 
 //        Personal personal = new Personal();
@@ -25,7 +25,7 @@ public class PersonalController {
 //        personalRepository.save(personal);
 //        Personal ivanov = personalRepository.findPersonalByName("Иванов");
         Iterable<Personal> all = personalRepository.findAll();
-        map.addAttribute("ivanov",all);
-        return "home";
+        map.addAttribute("personalList",all);
+        return "zavotd";
     }
 }

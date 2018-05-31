@@ -34,6 +34,17 @@ public class Calls implements Serializable {
         this.dateOfCall = dateOfCall;
     }
 
+    @Column(name = "description_of_call")
+    private String description_of_call;
+
+    public String getDescription_of_call() {
+        return description_of_call;
+    }
+
+    public void setDescription_of_call(String description_of_call) {
+        this.description_of_call = description_of_call;
+    }
+
     @ManyToOne
     @JoinColumn(name = "Personal_idPersonal")
     private Personal personal;
@@ -87,6 +98,7 @@ public class Calls implements Serializable {
                 ", personal=" + personal +
                 ", doctorsErrors=" + doctorsErrors +
                 ", resultOfDoctorsCalls=" + resultOfDoctorsCalls +
+                ", getDescription_of_call=" + getDescription_of_call() +
                 ", GroupResultOfDoctorsCalls=" + resultOfDoctorsCalls.getGroupResultOfDoctorsCalls() +
                 '}';
     }

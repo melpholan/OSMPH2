@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+
+
+<head>
+    <!-- Необходимые Мета-теги всегда на первом месте -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <title>Ст. Врач</title>
+    <!--<link rel="stylesheet" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!-- Bootstrap CSS -->
+    <link href="/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg">
+    <!--.row{-->
+    <!--margin-top: 30px;-->
+    <!--margin-bottom: 30px-->
+    <!--}-->
+    <style class="row"
+    margin-top="30px"
+           margin-bottom="30px"></style>
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">-->
+</head>
+
+<body>
+<header class=" top-bar js-top-bar _fixed">
+<ul class="nav nav-tabs">
+
+    <li role="presentation" class="active"><a href="#">Записать вызова</a></li>
+    <li role="presentation"><a href="#">Отеты</a></li>
+    <li role="presentation"><a href="#">Персонал</a></li>
+    <li role="presentation" >
+
+
+    </li>
+</ul>
+
+</header>
+
+
+
+
+
+<h1>
+    Старший врач  <span style="margin-left: 100px" th:utext="${time}">22/22/22</span>
+    <p>Старший врач  <span style="margin-left: 100px" th:text="Сегодня+'    '+${#dates.format(today,'dd MMMM yyyy')}">22/22/22</span></p>
+</h1>
+
+<form class="needs-validation"  method="post" action="/stvr" th:action="@{/stvr}">
+    <div class="form-row" style="margin-bottom:30px">
+        <div class="col-md-2 mb-3" style="margin-bottom:30px">
+            <label for="validationTooltip01">Дата</label>
+            <input  type="date" class="form-control" id="validationTooltip01" placeholder="Дата" name="date" required>
+            <div class="valid-tooltip">
+
+            </div>
+        </div>
+        <div class="col-md-5 mb-3" style="margin-bottom:30px">
+
+            <label for="validationTooltip02">Фамилия врача</label>
+            <div class="input-group">
+            <span class="input-group-addon"><i
+                    class="glyphicon glyphicon-list"></i></span>
+                <select name="doctor" roleId="awardPartner" id="validationTooltip02"
+                 class="form-control selectpicker">
+                <option value="">Выберите врача</option>
+                <option th:each="pers : ${personal}"
+                th:value="${pers.idPersonal}"
+                th:text="${pers.name}+' '+${pers.surname}"></option>
+                </select>
+            </div>
+
+            <!--<label for="validationTooltip02">Фамилия врача</label>-->
+            <!--<input type="text" class="form-control" id="validationTooltip02" placeholder="Фамилия вр" value="" required>-->
+            <!--<div class="valid-tooltip"></div>-->
+        </div>
+        <div class="col-md-5 mb-3" style="margin-bottom:30px">
+            <label for="errors">Ошибки</label>
+            <div class="input-group">
+            <span class="input-group-addon"><i
+                    class="glyphicon glyphicon-list"></i></span>
+                <select name="error" roleId="docError" id="errors"
+                        class="form-control selectpicker">
+                    <option value="">Выберите rerror</option>
+                    <option th:each="err : ${errors}"
+                            th:value="${err.idDoctorsErrors}"
+                            th:text="${err.errorsCharacter}"></option>
+                </select>
+            </div>
+                <!--<input type="text" class="form-control" id="validationTooltipUsername" placeholder="Имя пользователя" aria-describedby="validationTooltipUsernamePrepend" required>-->
+                <!--<div class="invalid-tooltip">-->
+                <!--</div>-->
+
+        </div>
+    </div>
+    <div class="form-row">
+
+        <!--<div class="col-md-3 mb-3">-->
+            <!--<label for="validationTooltip04">State</label>-->
+            <!--<input type="text" class="form-control" id="validationTooltip04" placeholder="State" required>-->
+            <!--<div class="invalid-tooltip">-->
+                <!--Please provide a valid state.-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="col-md-4 mb-3">
+            <!--<label for="validationTooltip05">Результат вызова</label>-->
+            <!--<input type="text" class="form-control" id="validationTooltip05" placeholder="Zip" required>-->
+            <!--<div class="invalid-tooltip">-->
+                <!--Please provide a valid zip.-->
+            <!--</div>-->
+            <label for="result">Результат вызова</label>
+            <div class="input-group">
+            <span class="input-group-addon"><i
+                    class="glyphicon glyphicon-list"></i></span>
+                <select name="result" roleId="docResult" id="result"
+                        class="form-control selectpicker">
+                    <option value="">Выберите result</option>
+                    <option th:each="res : ${callResults}"
+                            th:value="${res.idResultOfDoctorCalls}"
+                            th:text="${res.rus_describe_result}"></option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-md-8 mb-3">
+            <label for="exampleFormControlTextarea1">Примечания</label>
+            <textarea name="prim" th:name="prim" th:value="${prim}" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <!--<input type="text"  rows="3" class="form-control" id="validationTooltip03" placeholder="City" required>-->
+            <div class="invalid-tooltip">
+                Please provide a valid city.
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Записать вызов</button>
+</form>
+
+
+<h2><span th:text="${ok}">OK</span></h2>
+
+
+
+<div class="col-md-2">
+<script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+</div>
+
+
+
+</body>
+
+</html>

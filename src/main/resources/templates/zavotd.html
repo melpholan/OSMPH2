@@ -1,0 +1,64 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<!DOCTYPE html>
+
+<head>
+    <!-- Необходимые Мета-теги всегда на первом месте -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <title>Зав. Отделением</title>
+    <!--<link rel="stylesheet" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!-- Bootstrap CSS -->
+    <link href="/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">-->
+</head>
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="/zavotdpremium" th:href="@{/zavotdpremium}">Рассчитать премию</a></li>
+    <li role="presentation"><a href="#">Посмотреть ошибки</a></li>
+</ul>
+
+</head>
+<body>
+
+<h1>Заведующий отдклением</h1>
+
+
+
+
+
+
+<table class="table table-striped table-hover table-bordered">
+
+    <thead class="thead thead-light">
+
+    <tr>
+
+        <th scope="col">ID</th>
+        <th scope="col">Фамилия</th>
+        <th scope="col">Имя</th>
+        <th scope="col">Отчество</th>
+
+    </tr>
+    </thead>
+    <tbody>
+
+        <tr th:each="itm :${personalList}">
+
+            <th scope="row" th:text="${itm.idPersonal}"></th>
+            <td > <a th:href="@{${itm.idPersonal}}" th:text="${itm.name}"></a></td>
+            <td th:text="${itm.surname}"></td>
+            <td th:text="${itm.patronymic}"></td>
+
+        </tr>
+
+    </tbody>
+</table>
+
+
+<script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

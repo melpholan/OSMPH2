@@ -1,0 +1,114 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<!DOCTYPE html>
+
+<head>
+    <!-- Необходимые Мета-теги всегда на первом месте -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <title>Зав. Отделением</title>
+    <!--<link rel="stylesheet" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!-- Bootstrap CSS -->
+    <link href="/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">-->
+</head>
+<header>
+<ul class="nav nav-tabs">
+    <li role="presentation" ><a href="/zavotd.html" th:href="@{/zav}">Home</a></li>
+    <li role="presentation" class="active"><a href="#">Рассчитать премию</a></li>
+    <li role="presentation"><a href="#">Посмотреть ошибки</a></li>
+</ul>
+
+</header>
+<body>
+
+<h1 style="margin-left:50px; margin-bottom: 50px">Заведующий отделением</h1>
+
+
+
+<form class="needs-validation"  method="get" action="/stvr" th:action="@{/premiumtable}">
+    <div class="form-row" style="margin-bottom:30px">
+
+
+
+        <div class="col-md-2 mb-3" style="margin-bottom:30px">
+            <label for="start">Дата начала периода</label>
+            <input  type="date" class="form-control" id="start" placeholder="Дата начала" name="start" required>
+            <div class="valid-tooltip">
+
+            </div>
+        </div>
+
+        <div class="col-md-2 mb-3" style="margin-bottom:30px">
+            <label for="start">Дата окончания периода</label>
+            <input  type="date" class="form-control" id="finish" placeholder="Дата окончания" name="finish" required>
+            <div class="valid-tooltip">
+
+            </div>
+        </div>
+
+        <div class="col-md-2 mb-3" style="margin-bottom:30px">
+            <label for="start">Сумма </label>
+            <input  type="number" class="form-control" id="cash" placeholder="Сумма" name="cash" required>
+            <div class="valid-tooltip">
+
+            </div>
+        </div>
+
+        <div class="col-md-2 mb-3" style="margin-bottom:30px">
+            <label for="coefficient">Коэффициент поощрения</label>
+            <input  type="number" class="form-control" id="coefficient" name="coefficient"
+                    value="0" min="0" max="1" step="0.01" required/>
+        </div>
+
+        <div class="col-md-2 mb-3" style="margin-bottom:30px">
+            <label for="norm">Норма вызовов</label>
+            <input  type="number" class="form-control" id="norm" name="norm"
+                    required/>
+        </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+    <div class="form-row" style="margin-bottom:30px">
+
+
+        <div class="col-md-4 mb-3">
+
+        </div>
+
+        <div class="col-md-4 mb-3">
+
+            <button class="btn btn-primary" type="submit">Рассчитать премию</button>
+
+            <!--<label for="result"></label>-->
+
+        </div>
+
+        <div class="col-md-4 mb-3">
+
+        </div>
+    </div>
+
+
+</form>
+
+
+
+
+
+
+
+<script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

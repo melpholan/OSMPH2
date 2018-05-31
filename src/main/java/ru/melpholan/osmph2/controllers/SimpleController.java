@@ -12,7 +12,7 @@ public class SimpleController {
 //    String appName;
 
 
-    @GetMapping("/")
+    @GetMapping("/simple")
     public String homePage(Model model) {
         model.addAttribute("appName", "appName");
         model.addAttribute("surname", "ДЕНИС");
