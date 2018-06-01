@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta charset="UTF-8">
-    <title>Администратор</title>
+    <title>Зав. Отделением</title>
 
     <!--<style>-->
     <!--.table-fixed thead {-->
@@ -48,10 +48,10 @@
 
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" href="/admin" th:href="@{/admin}">Главная</a>
+                    <a class="nav-link " href="/admin" th:href="@{/admin}">Главная</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  "  href="#" th:href="@{#}">Редактировать справочники</a>
+                    <a class="nav-link  active"  href="#" th:href="@{#}">Редактировать справочники</a>
                 </li>
 
                 <li class="nav-item">
@@ -72,7 +72,7 @@
 
 <div class="container" style="margin-left: 200px">
 
-    <form class="form-horizontal" >
+    <form class="form-horizontal" action="#" method="get">
         <fieldset>
 
             <!-- Form Name -->
@@ -80,7 +80,7 @@
 
             <!-- Select Basic -->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="selectbasic">Роль</label>
+                <label class="col-md-4 control-label" for="selectbasic">Выбрать справочник</label>
                 <div class="col-md-6">
                     <select id="selectbasic" name="selectbasic" class="form-control">
                         <option value="1">Администратор</option>
@@ -90,77 +90,6 @@
                 </div>
             </div>
 
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="textinput">Фамилия</label>
-                <div class="col-md-8">
-                    <input id="textinput" name="textinput" placeholder="Фамилия" class="form-control input-md" required="" type="text">
-
-                </div>
-            </div>
-
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="surname">Имя</label>
-                <div class="col-md-8">
-                    <input id="surname" name="surname" placeholder="Имя" class="form-control input-md" required="" type="text">
-
-                </div>
-            </div>
-
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="te">Отчество</label>
-                <div class="col-md-8">
-                    <input id="te" name="te" placeholder="Дата рождения" class="form-control input-md" required="" type="text">
-
-                </div>
-            </div>
-
-            <!-- Password input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="patronim">Дата рождения</label>
-                <div class="col-md-8">
-                    <input id="patronim" type="date" name="patronim" placeholder="Отчество" class="form-control input-md" >
-
-                </div>
-            </div>
-
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="textinp">Должность</label>
-                <div class="col-md-8">
-                    <input id="textinp" name="textinp" placeholder="Должность" class="form-control input-md" required="" type="text">
-
-                </div>
-            </div>
-
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="texti">Логин</label>
-                <div class="col-md-8">
-                    <input id="texti" name="texti" placeholder="Логин" class="form-control input-md" required="" type="text">
-
-                </div>
-            </div>
-
-            <!-- Password input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="passwordinput">Пароль</label>
-                <div class="col-md-8">
-                    <input id="passwordinput" name="passwordinput" placeholder="Пароль" class="form-control input-md" required="" type="password">
-
-                </div>
-            </div>
-
-            <!-- Password input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="passw">Повторить пароль</label>
-                <div class="col-md-8">
-                    <input id="passw" name="passw" placeholder="Пароль" class="form-control input-md" required="" type="password">
-
-                </div>
-            </div>
 
             <!-- Button (Double) -->
             <div class="form-group">

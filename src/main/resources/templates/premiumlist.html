@@ -9,25 +9,67 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta charset="UTF-8">
     <title>Зав. Отделением</title>
-    <!--<link rel="stylesheet" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css">-->
-    <!-- Bootstrap CSS -->
-    <link href="/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg">
+
+    <!--<style>-->
+        <!--.table-fixed thead {-->
+            <!--width: 97%;-->
+        <!--}-->
+        <!--.table-fixed tbody {-->
+            <!--height: 230px;-->
+            <!--overflow-y: auto;-->
+            <!--width: 100%;-->
+        <!--}-->
+        <!--.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {-->
+            <!--display: block;-->
+        <!--}-->
+        <!--.table-fixed tbody td, .table-fixed thead > tr> th {-->
+            <!--float: left;-->
+            <!--border-bottom-width: 0;-->
+        <!--}-->
+    <!--</style>-->
+
+    <script src="/webjars/jquery/1.11.1/jquery.min.js"></script>
+
+    <link href="/bootstrap-4.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">-->
 </head>
 <header>
-<ul class="nav nav-tabs">
-    <li role="presentation" ><a href="#">Home</a></li>
-    <li role="presentation" class="active"><a href="zavotdpremium.html" th:href="@{/zavotdpremium}">Рассчитать премию</a></li>
-    <li role="presentation"><a href="#">Посмотреть ошибки</a></li>
-    <li role="presentation"><a href="/" th:href="@{/}">Выйти</a></li>
-</ul>
+<!--<ul class="nav nav-tabs">-->
+    <!--<li role="presentation" ><a href="#">Home</a></li>-->
+    <!--<li role="presentation" class="active"><a href="zavotdpremium.html" th:href="@{/zavotdpremium}">Рассчитать премию</a></li>-->
+    <!--<li role="presentation"><a href="#">Посмотреть ошибки</a></li>-->
+    <!--<li role="presentation"><a href="/" th:href="@{/}">Выйти</a></li>-->
+<!--</ul>-->
+
+    <header>
+
+        <div class="row">
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link " href="/zav" th:href="@{/zav}">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  active"  href="zavotdpremium.html" th:href="@{/zavotdpremium}">Рассчитать премию</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " th:href="@{/errorsperiod}" href="/errorsperiod">Вызова с ошибками</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/" th:href="@{/}">Выйти</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </header>
 
 </header>
 
 <body>
 
-<h1>Заведующий отдклением</h1>
+<h1 style="margin-left:50px; margin-bottom: 50px; margin-top: 25px">Заведующий отделением</h1>
 
 
 

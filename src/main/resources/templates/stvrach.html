@@ -10,9 +10,15 @@
     <meta charset="UTF-8">
     <title>Ст. Врач</title>
     <!--<link rel="stylesheet" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css">-->
-    <!-- Bootstrap CSS -->
-    <link href="/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg">
+    <!--&lt;!&ndash; Bootstrap CSS &ndash;&gt;-->
+    <!--<link href="/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="/static/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.ttf">-->
+    <!--<link href="/bootstrap-4.1.1-dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <script src="/webjars/jquery/1.11.1/jquery.min.js"></script>
+
+    <link href="/bootstrap-4.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
+    <script src= "/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
     <!--.row{-->
     <!--margin-top: 30px;-->
     <!--margin-bottom: 30px-->
@@ -29,6 +35,20 @@
     border: none;
     text-transform: capitalize;
     transition: all 0.5s ease 0s;
+
+        h1{
+             font-size: 31px;
+             line-height: 40px;
+             font-weight: 600;
+             color:#4c5357;
+         }
+        h2{
+            color: #5e8396;
+            font-size: 21px;
+            line-height: 32px;
+            font-weight: 400;
+
+
     }
     </style>
     <style class="row"
@@ -40,26 +60,58 @@
 
 <body>
 <header class=" top-bar js-top-bar _fixed">
-<ul class="nav nav-tabs">
+<!--<ul class="nav nav-tabs">-->
 
-    <li role="presentation" class="active"><a href="#">Записать вызова</a></li>
-    <li role="presentation"><a href="#">Отеты</a></li>
-    <li role="presentation"><a href="#">Персонал</a></li>
-    <li role="presentation"><a href="/" th:href="@{/}">Выйти</a></li>
-</ul>
+    <!--<li role="presentation" class="active"><a href="#">Записать вызова</a></li>-->
+    <!--<li role="presentation"><a href="#">Отеты</a></li>-->
+    <!--<li role="presentation"><a href="#">Персонал</a></li>-->
+    <!--<li role="presentation"><a href="/" th:href="@{/}">Выйти</a></li>-->
+    <!--<h4> <span style="margin-left: 100px" th:text="Сегодня+'    '+${#dates.format(today,'dd MM yyyy')}">22/22/22</span></h4>-->
+<!--</ul>-->
+
+    <div class="row">
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link disabled active" href="#" th:href="@{#}">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  href="/stvrpersonal" th:href="@{/stvrpersonal}">Персонал</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " th:href="@{#}" href="#">Отчеты</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/" th:href="@{/}">Выйти</a>
+            </li>
+
+        </ul>
+        <h4> <span style="margin-left: 100px; margin-top: 15px" th:text="Сегодня+'    '+${#dates.format(today,'dd MM yyyy')}">22/22/22</span></h4>
+
+    </div>
 
 </header>
 
 
 
+<div class="row">
+
+    <div class="col-md-12">
+
+        <h1 style="margin-left:50px; margin-bottom: 25px; margin-top: 25px">Старший врач</h1>
+        <H2 style="margin-left: 400px"><span th:text="${ok}"></span></H2>
+
+<!--<h1 style="margin-left: 30px">-->
+
+    <!--<p>Старший врач</p>-->
+<!--</h1>-->
 
 
-<h1 style="margin-left: 30px">
+</div>
+</div>
 
-    <p>Старший врач  <span style="margin-left: 100px" th:text="Сегодня+'    '+${#dates.format(today,'dd MM yyyy')}">22/22/22</span></p>
-</h1>
 
-<form class="needs-validation"  method="post" action="/stvr" th:action="@{/stvr}">
+<form style="margin-left: 15px; margin-right: 15px" class="needs-validation"  method="post" action="/stvr" th:action="@{/stvr}">
     <div class="form-row" style="margin-bottom:30px">
         <div class="col-md-2 mb-3" style="margin-bottom:30px">
             <label for="validationTooltip01">Дата</label>
@@ -94,7 +146,7 @@
                     class="glyphicon glyphicon-list"></i></span>
                 <select name="error" roleId="docError" id="errors"
                         class="form-control selectpicker">
-                    <option value="">Выберите rerror</option>
+                    <option value="">Выберите ошибку</option>
                     <option th:each="err : ${errors}"
                             th:value="${err.idDoctorsErrors}"
                             th:text="${err.errorsCharacter}"></option>
@@ -127,7 +179,7 @@
                     class="glyphicon glyphicon-list"></i></span>
                 <select name="result" roleId="docResult" id="result"
                         class="form-control selectpicker">
-                    <option value="">Выберите result</option>
+                    <option value="">Выберите результат</option>
                     <option th:each="res : ${callResults}"
                             th:value="${res.idResultOfDoctorCalls}"
                             th:text="${res.rus_describe_result}"></option>
@@ -145,11 +197,23 @@
         </div>
     </div>
 
-    <button class="btn btn-primary" type="submit">Записать вызов</button>
+    <div class="form-group">
+        <div class="text-center">
+            <div style="margin-top: 60px" class="btn-group btn-group-lg" role="group" aria-label="...">
+                <button type="reset" class="btn btn-info"><i class="fa fa-remove"></i> Отмена</button>
+                <button class="btn btn-primary" type="submit">Записать вызов</button>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
 </form>
 
 
-<h2><span th:text="${ok}">OK</span></h2>
+<!--<h2><span th:text="${ok}">OK</span></h2>-->
 
 
 

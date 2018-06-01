@@ -17,4 +17,7 @@ public interface CallsRepo  extends CrudRepository<Calls, Long>{
     List<Calls> findAllByDateOfCallBetweenAndDoctorsErrorsGreaterThanAndPersonal(Date start, Date finish,
 
                                                                                  DoctorsErrors error, Personal personal);
+
+    List<Calls> findByDateOfCallBetweenAndPersonalAndDoctorsErrors(Date start, Date finish,
+                                                                     Personal personal, DoctorsErrors error);
 }

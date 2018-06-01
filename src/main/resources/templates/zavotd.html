@@ -12,29 +12,65 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta charset="UTF-8">
     <title>Зав. Отделением</title>
-    <!--<link rel="stylesheet" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css">-->
-    <!-- Bootstrap CSS -->
-    <link href="/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg">
+
+
+    <script src="/webjars/jquery/1.11.1/jquery.min.js"></script>
+
+    <link href="/bootstrap-4.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">-->
+
+   <style> h1{
+    font-size: 31px;
+    line-height: 40px;
+    font-weight: 600;
+    color:#4c5357;
+    }
+    h2{
+    color: #5e8396;
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: 400;
+
+   </style>
 </head>
 
 
 <body>
 
 <header>
-<ul class="nav nav-tabs">
-    <li role="presentation" class="active"><a href="#">Главная</a></li>
-    <li role="presentation"><a href="/zavotdpremium" th:href="@{/zavotdpremium}">Рассчитать премию</a></li>
-    <li role="presentation"><a href="#">Посмотреть ошибки</a></li>
-    <li role="presentation"><a href="/" th:href="@{/}">Выйти</a></li>
-</ul>
+<!--<ul class="nav nav-tabs">-->
+    <!--<li role="presentation" class="active"><a href="#">Главная</a></li>-->
+    <!--<li role="presentation"><a href="/zavotdpremium" th:href="@{/zavotdpremium}">Рассчитать премию</a></li>-->
+    <!--<li role="presentation"><a href="/errorsperiod" th:href="@{/errorsperiod}">Посмотреть ошибки</a></li>-->
+    <!--<li role="presentation"><a href="/" th:href="@{/}">Выйти</a></li>-->
+<!--</ul>-->
+
+
+    <div class="row">
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link disabled active" href="#" th:href="@{/zav}">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  href="zavotdpremium.html" th:href="@{/zavotdpremium}">Рассчитать премию</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " th:href="@{/errorsperiod}" href="/errorsperiod">Вызова с ошибками</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/" th:href="@{/}">Выйти</a>
+            </li>
+        </ul>
+
+    </div>
 
 </header>
 
 
 
-<h1 style="margin-left:50px; margin-bottom: 50px">Заведующий отделением</h1>
+<h1 style="margin-left:50px; margin-bottom: 50px; margin-top: 25px">Заведующий отделением</h1>
 
 
 
@@ -56,10 +92,12 @@
     </thead>
     <tbody>
 
-        <tr th:each="itm :${personalList}">
+    <!--<a th:href="@{/order/details/{id}/{action}(id=3,action='show_all')}">-->
+
+    <tr th:each="itm :${personalList}">
 
             <th scope="row" th:text="${itm.idPersonal}"></th>
-            <td > <a th:href="@{${itm.idPersonal}}" th:text="${itm.name}"></a></td>
+            <td > <a th:href="@{/address/{id}(id=${itm.idPersonal})}" th:text="${itm.name}"></a></td>
             <td th:text="${itm.surname}"></td>
             <td th:text="${itm.patronymic}"></td>
 
@@ -83,16 +121,16 @@
 
 <ul class="nav nav-pills">
     <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
+        <a class="nav-link active disabled" href="#">Домой</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link"   href="zavotdpremium.html" th:href="@{/zavotdpremium}">Рассчитать премию</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" th:href="@{/errorsperiod}" href="/errorsperiod">Вызова с ошибками</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link " href="/" th:href="@{/}">Выйти</a>
     </li>
 </ul>
 

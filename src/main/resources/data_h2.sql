@@ -1,3 +1,55 @@
+
+--Adreses
+
+
+INSERT INTO adreses (sity, house, street, p_flat) VALUES ('Кировск','159','Брусилова','4');
+INSERT INTO adreses (sity, house, street, p_flat) VALUES ('Санкт-Петербург','36','Демидовский М.','143');
+INSERT INTO adreses (sity, house, street, p_flat) VALUES ('Санкт-Петербург','138','Дегтярная','75');
+INSERT INTO adreses (sity, house, street, p_flat) VALUES ('Санкт-Петербург','160','Ремизова','38');
+INSERT INTO adreses (sity, house, street, p_flat) VALUES ('Петергоф','159','Волоколамское','121');
+INSERT INTO adreses (sity, house, street, p_flat) VALUES ('Санкт-Петербург','174','Петра Алексеева','21');
+INSERT INTO adreses (sity, house, street, p_flat) VALUES ('Кировск','67','Кривоколенная','157');
+INSERT INTO adreses (sity, house, street, p_flat) VALUES ('Санкт-Петербург','186','Пушечная','21');
+INSERT INTO adreses (sity, house, street, p_flat) VALUES ('Кировск','56','Прядильная 3-я','24');
+INSERT INTO adreses (sity, house, street, p_flat) VALUES ('Кировск','77','Яхромская','9');
+
+
+--CONTACTS
+
+INSERT INTO contacts (email, phone_home, phone_mobile ) VALUES ('ceruleum1909@mail.ru','+7-812-501-33-09','+7-(927)-873-34-25');
+INSERT INTO contacts (email, phone_home, phone_mobile ) VALUES ('adders1869@rambler.ru','+7-812-544-17-09','+7-(915)-352-43-44');
+INSERT INTO contacts (email, phone_home, phone_mobile ) VALUES ('scheduler@2053yandex.ru','+7-812-434-24-28','+7-(909)-703-34-51');
+INSERT INTO contacts (email, phone_home, phone_mobile ) VALUES ('sheriff1805@rambler.ru','+7-812-764-96-36','+7-(909)-436-38-30');
+INSERT INTO contacts (email, phone_home, phone_mobile ) VALUES ('choluteca1928@rambler.ru','+7-812-813-10-54','+7-(931)-288-82-65');
+INSERT INTO contacts (email, phone_home, phone_mobile ) VALUES ('daimen2053@yandex.ru','+7-812-951-36-10','+7-(930)-567-81-50');
+INSERT INTO contacts (email, phone_home, phone_mobile ) VALUES ('abele1968@yandex.ru','+7-812-420-36-91','+7-(903)-587-65-05');
+INSERT INTO contacts (email, phone_home, phone_mobile ) VALUES ('disconsolate2063@rambler.ru','+7-812-316-82-16','+7-(909)-178-11-47');
+INSERT INTO contacts (email, phone_home, phone_mobile ) VALUES ('quebrachos1861@yandex.ru','+7-812-118-01-94','+7-(939)-093-50-08');
+INSERT INTO contacts (email, phone_home, phone_mobile ) VALUES ('ram1905@mail.ru','+7-812-559-55-18','+7-(932)-501-71-43');
+
+
+--PASSPORTS
+
+INSERT INTO passport ( birthday, date_of_dismissal, date_of_employment, last_date_of_work_license, adreses_id_adress, contacts_id_contacts ) VALUES ('1955-09-01',null,'1995-09-06','2013-10-23',1,1);
+INSERT INTO passport ( birthday, date_of_dismissal, date_of_employment, last_date_of_work_license, adreses_id_adress, contacts_id_contacts ) VALUES ('1995-09-08',null,'2006-12-25','2013-11-04',2,2);
+INSERT INTO passport ( birthday, date_of_dismissal, date_of_employment, last_date_of_work_license, adreses_id_adress, contacts_id_contacts ) VALUES ('1973-11-01',null,'2010-09-14','2014-07-27',3,3);
+INSERT INTO passport ( birthday, date_of_dismissal, date_of_employment, last_date_of_work_license, adreses_id_adress, contacts_id_contacts ) VALUES ('1978-10-07',null,'2014-04-08','2013-03-25',4,4);
+INSERT INTO passport ( birthday, date_of_dismissal, date_of_employment, last_date_of_work_license, adreses_id_adress, contacts_id_contacts ) VALUES ('1985-12-19',null,'1998-11-14','2014-04-24',5,5);
+INSERT INTO passport ( birthday, date_of_dismissal, date_of_employment, last_date_of_work_license, adreses_id_adress, contacts_id_contacts ) VALUES ('1981-07-01',null,'2015-03-20','2014-02-23',6,6);
+INSERT INTO passport ( birthday, date_of_dismissal, date_of_employment, last_date_of_work_license, adreses_id_adress, contacts_id_contacts ) VALUES ('1981-04-22',null,'2004-07-01','2015-12-08',7,7);
+INSERT INTO passport ( birthday, date_of_dismissal, date_of_employment, last_date_of_work_license, adreses_id_adress, contacts_id_contacts ) VALUES ('1960-05-03',null,'2015-06-27','2017-08-20',8,8);
+INSERT INTO passport ( birthday, date_of_dismissal, date_of_employment, last_date_of_work_license, adreses_id_adress, contacts_id_contacts ) VALUES ('1971-08-16',null,'2011-06-20','2015-07-23',9,9);
+INSERT INTO passport ( birthday, date_of_dismissal, date_of_employment, last_date_of_work_license, adreses_id_adress, contacts_id_contacts ) VALUES ('1960-12-05',null,'2015-08-06','2017-07-01',10,10);
+
+
+
+
+
+
+
+
+
+
 INSERT INTO Shift_Types( shift_name, hours_cuantity) VALUES ('8/8',24 );
 INSERT INTO Shift_Types( shift_name, hours_cuantity) VALUES ( '9/9', 24);
 INSERT INTO Shift_Types( shift_name, hours_cuantity) VALUES ( '8/22',14);
@@ -32,16 +84,16 @@ INSERT INTO Result_Of_Doctors_Calls(id_result_of_doctor_calls, type_of_result, r
 INSERT INTO Result_Of_Doctors_Calls(id_result_of_doctor_calls, type_of_result, rus_describe_result, Group_Result_Of_Doctors_Calls_id_calls) VALUES (13, 'result_transportation','Госпитализация', 2);
 INSERT INTO Result_Of_Doctors_Calls(id_result_of_doctor_calls, type_of_result, rus_describe_result, Group_Result_Of_Doctors_Calls_id_calls) VALUES (14, 'result_ambulatorno', 'Амбулаторно',2);
 
-INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (1,'Жуков','Гордей','Викентьевич',NULL );
-INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (2,'Дубова','Анисья','Ефимьевна',NULL );
-INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (3,'Афонин','Рустам','Ерофеевич',NULL );
-INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (4,'Ерофеев','Сергей','Ефстафьевич',NULL );
-INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (5,'Коровин','Юрий','Матвеевич',NULL );
-INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (6,'Ёмочкина','Варвара','Ефремовна',NULL );
-INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (7,'Игнатьев','Мартын','Фокич',NULL );
-INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (8,'Селезнева','Алиса','Ефимовна',NULL );
-INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (9,'Авдюничева','Эльга','Ефремовна',NULL );
-INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (10,'Колесов','Илья','Васильевич',NULL );
+INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (1,'Жуков','Гордей','Викентьевич',1 );
+INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (2,'Дубова','Анисья','Ефимьевна',2 );
+INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (3,'Афонин','Рустам','Ерофеевич',3 );
+INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (4,'Ерофеев','Сергей','Ефстафьевич',4 );
+INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (5,'Коровин','Юрий','Матвеевич',5 );
+INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (6,'Ёмочкина','Варвара','Ефремовна',6 );
+INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (7,'Игнатьев','Мартын','Фокич',7 );
+INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (8,'Селезнева','Алиса','Ефимовна',8 );
+INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (9,'Авдюничева','Эльга','Ефремовна',9 );
+INSERT INTO Personal(id_personal, p_name, p_surname, p_patronymic, Passport_id_passport) VALUES (10,'Колесов','Илья','Васильевич',10 );
 
 --shifts and calls doc-1
 
@@ -4872,4 +4924,6 @@ INSERT INTO Calls( date_of_call,description_of_call, personal_id_personal, docto
 
 
 INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types) VALUES( '2018-05-28', 10, 2);
+
+
 

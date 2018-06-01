@@ -39,7 +39,7 @@ public class HeadDoctorController {
     CallsRepo callsRepo;
 
     @PostMapping("/stvr")
-   public String createCall(@RequestParam("date") String date,
+    public String createCall(@RequestParam("date") String date,
                             @RequestParam("doctor") String doctor,
                             @RequestParam("error") String error,
                             @RequestParam("result") String result,
@@ -82,8 +82,19 @@ public class HeadDoctorController {
         callsRepo.save(call);
 
         map.addAttribute("ok","Вызов записан успешно");
+        Iterable<Personal> personals = personalRepository.findAll();
+        Iterable<ResultOfDoctorsCalls> callResults = resultOfCallRepo.findAll();
+        Iterable<DoctorsErrors> errors = doctorsErrorsRepo.findAll();
 
-        return "redirect:stvr";
+        map.addAttribute("personal",personals);
+        map.addAttribute("callResults", callResults);
+        map.addAttribute("errors", errors);
+        map.addAttribute("prim",new String());
+        Date time = new Date();
+        map.addAttribute("today", time);
+
+//        return "redirect:stvr";
+        return "stvrach";
     }
 
 
@@ -109,4 +120,17 @@ public class HeadDoctorController {
         return modelAndView;
 
     }
+
+
+    @GetMapping("/stvrpersonal")
+    public String getpersonals(ModelMap map){
+
+
+        Iterable<Personal> all = personalRepository.findAll();
+        map.addAttribute("personalList",all);
+        Date date = new Date();
+        map.addAttribute("today", date);
+        return "stvrpersonal";
+    }
+
 }
