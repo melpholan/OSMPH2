@@ -17,6 +17,7 @@ import ru.melpholan.osmph2.repo.ContactRepo;
 import ru.melpholan.osmph2.repo.PassportRepo;
 import ru.melpholan.osmph2.repo.PersonalRepository;
 
+import java.util.Date;
 import java.util.Optional;
 
 @Controller
@@ -62,7 +63,10 @@ public class  AdressController {
         Passport passport = personal.getPassport();
         Adreses adreses = passport.getAdreses();
         Contacts contacts = passport.getContacts();
+
+        Date birthsday = passport.getBirthsday();
 //
+        modelAndView.addObject("birthsday", birthsday);
         modelAndView.addObject("personal", personal);
         modelAndView.addObject("passport", passport);
         modelAndView.addObject("address", adreses);

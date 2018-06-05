@@ -34,7 +34,7 @@
     <script src="/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">-->
 </head>
-<header>
+
 <!--<ul class="nav nav-tabs">-->
     <!--<li role="presentation" ><a href="#">Home</a></li>-->
     <!--<li role="presentation" class="active"><a href="zavotdpremium.html" th:href="@{/zavotdpremium}">Рассчитать премию</a></li>-->
@@ -56,6 +56,10 @@
                 <li class="nav-item">
                     <a class="nav-link " th:href="@{/errorsperiod}" href="/errorsperiod">Вызова с ошибками</a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link "  href="/shift" th:href="@{/shift}">Смены</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/" th:href="@{/}">Выйти</a>
                 </li>
@@ -65,7 +69,7 @@
 
     </header>
 
-</header>
+
 
 <body>
 
@@ -73,7 +77,11 @@
 
 
 
+<h3>
 
+    <p style="color:#23527c" th:text="'Период с '+${#dates.format(dstart,'dd MM yyyy')}+' по '+${#dates.format(dfinish,'dd MM yyyy')}"></p>
+
+</h3>
 
 
 <table class="table table-striped table-hover table-bordered">
@@ -124,7 +132,6 @@
     </tbody>
 </table>
 
-<a href="#" th:href="@{/errordoctor}">Ошибки</a>
 
 <div style="padding: 30px 20px 20px 10px ">
 
@@ -136,13 +143,29 @@
 
 </div>
 
-<h3>
 
-    <p style="color:red" th:text="'DATES '+${datestart} +'  '+${datefinish}"></p>
 
-</h3>
 
-</div>
+
+
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link " href="#">Домой</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active"   href="/zavotdpremium.html" th:href="@{/zavotdpremium}">Рассчитать премию</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" th:href="@{/errorsperiod}" href="/errorsperiod">Вызова с ошибками</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link "  href="/shift" th:href="@{/shift}">Смены</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link " href="/" th:href="@{/}">Выйти</a>
+    </li>
+</ul>
 
 
 

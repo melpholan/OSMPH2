@@ -1,0 +1,97 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<!DOCTYPE html>
+
+<head>
+    <!-- Необходимые Мета-теги всегда на первом месте -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <title>Администратор</title>
+
+    Добавить тип смены
+
+    <script src="/webjars/jquery/1.11.1/jquery.min.js"></script>
+
+    <link href="/bootstrap-4.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">-->
+</head>
+
+
+<header>
+
+    <div class="row">
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link " href="/admin" th:href="@{/admin}">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  active"  href="/createsprav" th:href="@{/createsprav}">Редактировать справочники</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/" th:href="@{/}">Выйти</a>
+            </li>
+        </ul>
+
+    </div>
+
+</header>
+
+
+
+<body>
+
+<h1 style="margin-left:50px; margin-bottom: 50px; margin-top: 25px">Администратор</h1>
+
+
+<div class="container" style="margin-left: 200px">
+
+    <form class="form-horizontal" action="/addshifttype" th:action="@{/addshifttype}" method="get" th:method="get">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Изменение справочников</legend>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="shifttype">Тип смены</label>
+                <div class="col-md-5">
+                    <input id="shifttype" name="shifttype" placeholder="" class="form-control input-md" required="" type="text" th:type="text">
+                    <span class="help-block">Введите название смены</span>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="hours">Количество часов</label>
+                <div class="col-md-5">
+                    <input id="hours" name="hours" placeholder="" class="form-control input-md" required=""  min="1" max="24" type="number">
+                    <span class="help-block">Введите количество часов в смене</span>
+                </div>
+            </div>
+
+            <!-- Button (Double) -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="button1id"></label>
+                <div class="col-md-8">
+                    <button id="button1id" name="button1id" class="btn btn-info">Отмена</button>
+                    <button id="button2id" name="button2id" class="btn btn-primary">Добавить</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
+
+
+
+</div>
+
+
+
+</body>
+</html>

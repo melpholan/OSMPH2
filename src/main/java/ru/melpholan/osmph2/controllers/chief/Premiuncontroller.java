@@ -57,11 +57,14 @@ public class Premiuncontroller {
                                        @RequestParam("norm") String callsNorm, ModelMap map){
 
 
+
+
+
+
+
         SimpleDateFormat format = new SimpleDateFormat();
         format.applyPattern("yyyy-MM-dd");
 
-        map.addAttribute("datestart",start);
-        map.addAttribute("datefinish", finish);
 
 
         Date st = null;
@@ -73,7 +76,8 @@ public class Premiuncontroller {
         try {
             st= format.parse(start);
 
-            System.out.println("date start "+st);
+            System.err.println("Start "+start);
+
 
             fin= format.parse(finish);
         } catch (ParseException e) {
@@ -106,7 +110,13 @@ public class Premiuncontroller {
 
         map.addAttribute("load",load);
 
-        return "/premiumlist";
+        map.addAttribute("datestart", start);
+        map.addAttribute("datefinish",finish);
+
+        map.addAttribute("dstart",st);
+        map.addAttribute("dfinish", fin);
+
+        return "premiumlist";
 
     }
 

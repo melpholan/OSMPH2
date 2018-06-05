@@ -1,14 +1,275 @@
-<html xmlns:th="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8"/>
-    <title>Home Page</title>
+    <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+    <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+    <!--<link href="/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" >-->
+    <!--<script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>-->
+    <!--<link href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
+    <!--<script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js>"></script>-->
+    <script src="/webjars/jquery/1.11.1/jquery.min.js"></script>
+
+    <link href="/bootstrap-4.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
+
+    <style>
+
+        .send-button{
+            background: #54C7C3;
+            width:100%;
+            font-weight: 600;
+            color:#fff;
+            padding: 8px 25px;
+        }
+        .g-button{
+            color: #fff !important;
+            border: 1px solid #EA4335;
+            background: #ea4335 !important;
+            width:100%;
+            font-weight: 600;
+            color:#fff;
+            padding: 8px 25px;
+        }
+        .my-input{
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+            cursor: text;
+            padding: 8px 10px;
+            transition: border .1s linear;
+        }
+        .header-title{
+            margin: 5rem 0;
+        }
+        h1{
+            font-size: 31px;
+            line-height: 40px;
+            font-weight: 600;
+            color:#4c5357;
+        }
+        h2{
+            color: #5e8396;
+            font-size: 21px;
+            line-height: 32px;
+            font-weight: 400;
+        }
+        .login-or {
+            position: relative;
+            color: #aaa;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .span-or {
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: -2px;
+            margin-left: -25px;
+            background-color: #fff;
+            width: 50px;
+            text-align: center;
+        }
+        .hr-or {
+            height: 1px;
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+        }
+        @media screen and (max-width:480px){
+            h1{
+                font-size: 26px;
+            }
+            h2{
+                font-size: 20px;
+            }
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <title>Смены</title>
 </head>
+
+
 <body>
-<h1>Hello !</h1>
-<p>Welcome to <span th:utext="${newShift}">Our App</span></p>
-<!--<p>Welcome to <span th:utext="${surname}">Our App</span></p>-->
-<!--<p>Welcome to <span th:utext="${bookList}">Our App</span></p>-->
-<!--<p>Welcome to <span th:utext="${bk[0].author}">Our App</span></p>-->
-<p>Welcome to <span th:utext="${newShift}">Our App</span></p>
+
+
+
+<header>
+
+    <div class="row">
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link " href="/zav" th:href="@{/zav}">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  href="zavotdpremium.html" th:href="@{/zavotdpremium}">Рассчитать премию</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " th:href="@{/errorsperiod}" href="/errorsperiod">Вызова с ошибками</a>
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link disabled active"  href="/shift" th:href="@{/shift}">Смены</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/" th:href="@{/}">Выйти</a>
+            </li>
+        </ul>
+
+    </div>
+
+</header>
+
+<h1 style="margin-left:50px; margin-bottom: 50px; margin-top: 25px">Заведующий отделением</h1>
+
+<h2><span style="color:red; margin-left:50px"  th:text="${error}"></span></h2>
+
+<form class="form-horizontal" style="margin-left:150px; margin-bottom: 50px" th:action="@{/shift}" th:method="post" action="/shift" method="post">
+    <fieldset>
+
+        <!-- Form Name -->
+        <legend>Назначить смену</legend>
+
+
+
+
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="start">Дата смены</label>
+            <div class="col-md-5">
+                <input id="start" th:type="date" name="date" placeholder="Дата" class="form-control input-md" required="" type="date">
+
+            </div>
+        </div>
+
+
+
+        <!-- Select Basic -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="doctor">Выберите врача</label>
+            <div class="col-md-8">
+                <select id="doctor" name="doctor" class="form-control">
+                    <option th:each="pers : ${personal}"
+                            th:value="${pers.idPersonal}"
+                            th:text="${pers.name}+' '+${pers.surname}+' '+ ${pers.patronymic}"></option>
+                </select>
+            </div>
+        </div>
+
+
+
+        <!-- Select Basic -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="shift">Выберите тип смены</label>
+            <div class="col-md-8">
+                <select id="shift" name="shift" class="form-control">
+                    <!--<option value="1">Option one</option>-->
+                    <option th:each="err : ${shifts}"
+                            th:value="${err.idShiftTypes}"
+                            th:text="${err.shiftName}"></option>
+                </select>
+            </div>
+        </div>
+
+
+
+        <!-- Button (Double) -->
+
+        <!-- Button (Double) -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="button1id"></label>
+            <div class="col-md-8">
+                <button id="button1id" type="reset" name="button1id" class="btn btn-info">Отмена</button>
+                <button id="button2id" type="submit" name="button2id" class="btn btn-primary">Записать</button>
+            </div>
+        </div>
+
+
+    </fieldset>
+</form>
+
+
+
+<form class="form-horizontal" style="margin-left:150px; margin-bottom: 50px" th:action="@{/findshift}" th:method="post" action="/findshift" method="post">
+    <fieldset>
+
+        <!-- Form Name -->
+        <legend>Искать смены</legend>
+
+
+
+
+
+        <!-- Text input-->
+
+        <div class="col-md-2 mb-3" style="margin-bottom:30px">
+            <label for="startdate">Дата начала периода</label>
+            <input th:type="date" type="date" class="form-control" id="startdate" placeholder="Дата начала" name="startdate" required>
+            <div class="valid-tooltip">
+
+            </div>
+        </div>
+
+        <div class="col-md-2 mb-3" style="margin-bottom:30px">
+            <label for="finish">Дата окончания периода</label>
+            <input   type="date" class="form-control" id="finish" placeholder="Дата окончания" name="finish" >
+            <div class="valid-tooltip">
+
+            </div>
+        </div>
+
+
+
+
+        <!-- Select Basic -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="doctor">Выберите врача</label>
+            <div class="col-md-8">
+                <select id="personal" name="personal" class="form-control">
+                    <option value="" >Выберите врача</option>
+                    <option th:each="pers : ${personal}"
+                            th:value="${pers.idPersonal}"
+                            th:text="${pers.name}+' '+${pers.surname}+' '+ ${pers.patronymic}"></option>
+                </select>
+            </div>
+        </div>
+
+
+
+        <!-- Select Basic -->
+        <!--<div class="form-group">-->
+            <!--<label class="col-md-4 control-label" for="shift">Выберите тип смены</label>-->
+            <!--<div class="col-md-8">-->
+                <!--<select id="shift" name="shift" class="form-control">-->
+                    <!--&lt;!&ndash;<option value="1">Option one</option>&ndash;&gt;-->
+                    <!--<option th:each="err : ${shifts}"-->
+                            <!--th:value="${err.idShiftTypes}"-->
+                            <!--th:text="${err.shiftName}"></option>-->
+                <!--</select>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+
+        <!-- Button (Double) -->
+
+        <!-- Button (Double) -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="button1id"></label>
+            <div class="col-md-8">
+                <button id="button1" type="reset" name="button1id" class="btn btn-info">Отмена</button>
+                <button id="button2" type="submit" name="button2id" class="btn btn-primary">Найти</button>
+            </div>
+        </div>
+
+
+    </fieldset>
+</form>
+
 </body>
 </html>

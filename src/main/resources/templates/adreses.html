@@ -81,6 +81,11 @@
         <li class="nav-item">
             <a class="nav-link disabled active"  href="#">Изменить сотрудника</a>
         </li>
+
+
+        <li class="nav-item">
+            <a class="nav-link "  href="/shift" th:href="@{/shift}">Смены</a>
+        </li>
         <li class="nav-item">
             <a class="nav-link" href="/" th:href="@{/}">Выйти</a>
         </li>
@@ -100,13 +105,13 @@
                     <div class="card-title">
                         <ul class="card-toolbar">
                             <li class="float-left">
-                                <h4 style="font-family:Poppins, sans-serif"><i class="fa fa-map-marker"></i>  Пасспорт сотрудника: <span th:text="${personal.name}+' '+${personal.surname}+' '+ ${personal.patronymic}"></span></h4>
+                                <h4 style="font-family:Poppins, sans-serif"><i class="fa fa-map-marker"></i>  Пасспорт сотрудника: <span th:text="${personal.name}+' '+${personal.surname}+' '+ ${personal.patronymic}+' :          '+${#dates.format(birthsday,'dd MM yyyy')}+'  г.р.'"></span></h4>
                                 <!--<h4 style="font-family:Poppins, sans-serif"><i class="fa fa-map-marker"></i> Address</h4>-->
                             </li>
-                            <li class="float-right">
-                                <button type="button" class="btn btn-default" id="btnHelp"><span class="fa fa-question-circle"></span> </button>
-                                <button type="button" class="btn btn-primary" id="btnAttachent"><span class="fa fa-paperclip"></span> Attachment </button>
-                            </li>
+                            <!--<li class="float-right">-->
+                                <!--<button type="button" class="btn btn-default" id="btnHelp"><span class="fa fa-question-circle"></span> </button>-->
+                                <!--<button type="button" class="btn btn-primary" id="btnAttachent"><span class="fa fa-paperclip"></span> Attachment </button>-->
+                            <!--</li>-->
                         </ul>
                     </div>
                 </div>
@@ -159,13 +164,13 @@
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="control-label" for="house">Номер дома</label>
-                                            <input th:type="text" th:value="${personal.passport.adress.houseNumber}" type="text" placeholder="State" class="form-control" id="house">
+                                            <input th:type="number" th:value="${personal.passport.adress.houseNumber}" type="number" placeholder="State" class="form-control" id="house">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="control-label" for="flat">Квартира</label>
-                                            <input type="text" th:type="text" th:value="${personal.passport.adress.flatNumber}" placeholder="Post Code" class="form-control" id="flat">
+                                            <input type="number" th:type="number" th:value="${personal.passport.adress.flatNumber}" placeholder="Post Code" class="form-control" id="flat">
                                         </div>
                                     </div>
                                 </div>
@@ -175,36 +180,17 @@
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="control-label" for="workdate">дата трудоустройства</label>
-                                            <input type="text" th:type="text" th:value="${personal.passport.dateOfEmployment}" placeholder="State" class="form-control" id="workdate">
+                                            <input type="date" th:type="date" th:value="${personal.passport.dateOfEmployment}" placeholder="State" class="form-control" id="workdate">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label class="control-label" for="licence">Дата сертификата</label>
-                                            <input type="text" th:type="text" th:value="${personal.passport.lastDateOfWorkLicense}" placeholder="Post Code" class="form-control" id="licence">
+                                            <input type="date" th:type="date" th:value="${personal.passport.lastDateOfWorkLicense}" placeholder="Post Code" class="form-control" id="licence">
                                         </div>
                                     </div>
                                 </div>
 
-                                <!--<div class="form-group">-->
-                                    <!--<label class="control-label" for="textinput">City</label>-->
-                                    <!--<input type="text" placeholder="City" class="form-control">-->
-                                <!--</div>-->
-                                <!-- Text input-->
-                                <!--<div class="row">-->
-                                    <!--<div class="col-lg-6">-->
-                                        <!--<div class="form-group">-->
-                                            <!--<label class="control-label" for="textinput">State</label>-->
-                                            <!--<input type="text" placeholder="State" class="form-control">-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                    <!--<div class="col-lg-6">-->
-                                        <!--<div class="form-group">-->
-                                            <!--<label class="control-label" for="textinput">Postcode</label>-->
-                                            <!--<input type="text" placeholder="Post Code" class="form-control">-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
 
                                 <div class="form-group">
                                     <label class="control-label" for="proff">Должность</label>
@@ -214,7 +200,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label class="control-label">Email:</label>
-                                    <input type="text" th:type="text" th:value="${personal.passport.contacts.emil}" class="form-control" placeholder="abc@gmail.com" />
+                                    <input type="email" th:type="text" th:value="${personal.passport.contacts.emil}" class="form-control" placeholder="abc@gmail.com" />
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label">Телефон:</label>
@@ -229,8 +215,8 @@
 
                         <div class="form-group">
                             <div class="text-center">
-                                <button type="submit" class="btn btn-default"><i class="fa fa-remove"></i> Отмена</button>
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Изменить</button>
+                                <button type="reset" class="btn btn-default"><i class="fa fa-remove"></i> Отмена</button>
+                                <button type="submit" th:type="submit"  class="btn btn-primary"><i class="fa fa-save"></i> Изменить</button>
                             </div>
                         </div>
                     </form>

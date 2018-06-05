@@ -20,6 +20,11 @@
         <li role="presentation" ><a href="/zav" th:href="@{/zav}">Домой</a></li>
         <li role="presentation" ><a href="zavotdpremium.html" th:href="@{/zavotdpremium}">Рассчитать премию</a></li>
         <li role="presentation" class="active disabled " ><a href="#">Посмотреть ошибки</a></li>
+
+
+        <li role="presentation">
+            <a   href="/shift" th:href="@{/shift}">Смены</a>
+        </li>
         <li role="presentation"><a href="/" th:href="@{/}">Выйти</a></li>
     </ul>
 
@@ -72,6 +77,26 @@
 
     </tbody>
 </table>
+
+
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link " href="/zav" th:href="@{/zav}">Домой</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link "   href="/zavotdpremium.html" th:href="@{/zavotdpremium}">Рассчитать премию</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" th:href="@{/errorsperiod}" href="/errorsperiod">Вызова с ошибками</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link "  href="/shift" th:href="@{/shift}">Смены</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link " href="/" th:href="@{/}">Выйти</a>
+    </li>
+</ul>
 
 
 

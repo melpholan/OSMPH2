@@ -46,7 +46,7 @@ public class HeadDoctorController {
                             @RequestParam("prim") String prim, ModelMap map){
 
         SimpleDateFormat format = new SimpleDateFormat();
-        format.applyPattern("yyyy-mm-dd");
+        format.applyPattern("yyyy-MM-dd");
 
         Date st = null;
         Long err = null;

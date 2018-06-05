@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-    <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
-    <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
-    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 
-    <!--<link href="/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" >-->
-    <!--<script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>-->
-    <!--<link href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
-    <!--<script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js>"></script>-->
     <script src="/webjars/jquery/1.11.1/jquery.min.js"></script>
 
     <link href="/bootstrap-4.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -88,12 +80,10 @@
     </style>
 
     <meta charset="UTF-8">
-    <title>Ошибки</title>
+    <title>Смены</title>
 </head>
 
-
 <body>
-
 
 
 <header>
@@ -102,18 +92,18 @@
 
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a class="nav-link " href="/zav" th:href="@{/zav}">Home</a>
+                <a class="nav-link " href="/zav" th:href="@{/zav}">Главная</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link"  href="zavotdpremium.html" th:href="@{/zavotdpremium}">Рассчитать премию</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled active" th:href="@{/errorsperiod}" href="/errorsperiod">Вызова с ошибками</a>
+                <a class="nav-link " th:href="@{/errorsperiod}" href="/errorsperiod">Вызова с ошибками</a>
             </li>
 
 
             <li class="nav-item">
-                <a class="nav-link "  href="/shift" th:href="@{/shift}">Смены</a>
+                <a class="nav-link disabled active"  href="/shift" th:href="@{/shift}">Смены</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/" th:href="@{/}">Выйти</a>
@@ -126,12 +116,11 @@
 
 <h1 style="margin-left:50px; margin-bottom: 50px; margin-top: 25px">Заведующий отделением</h1>
 
+<h2><span style="color:red; margin-left:50px"  th:text="'Смены за'+${#dates.format(start,'dd MM yyyy')}+' '+${#dates.format(finish,'dd MM yyyy')}"></span></h2>
 
 
 
-
-
-<table class="table table-striped table-hover table-bordered">
+<table class="table table-striped table-hover table-bordered" style="margin-left: 25px; margin-right: 25px">
 
     <thead class="thead thead-light">
 
@@ -142,44 +131,34 @@
         <th scope="col">Фамилия</th>
         <th scope="col">Имя</th>
         <th scope="col">Отчество</th>
-        <th scope="col">Результат вызова</th>
-        <th scope="col">Ошибки</th>
-        <th scope="col">Шкала ошибки</th>
-        <th scope="col">Примечания</th>
+        <th scope="col">Тип смены</th>
+        <th scope="col">Отработанные часы</th>
 
     </tr>
     </thead>
     <tbody>
 
-    <!--th:attrappend="class=${' ' + cssStyle}"-->
-    <!--'User is of type ' + (${user.isAdmin()} ? 'Administrator' : (${user.type} ?: 'Unknown'))-->
-    <!--th:classappend=" 'bg-danger' "-->
-    <!--<style>btn {-->
-    <!--background:#e4b9c0;-->
-    <!--}-->
-    <!--</style>-->
 
-    <!--th:if="${linea.estado} == 'Iniciado'" class="label label-success" th:text="#{label.glineas.estado.iniciado}-->
-    <!--<a href="details.html" th:href="@{/order/details(orderId=${o.id})}">view</a>-->
-    <!--th:if="${resultlist.get(itm).getLoad()} < ${load} " th:attrappend="style='background:#e4b9c0'"-->
-    <tr th:each="itm :${callswitherror}"  >
+    <!--<div>-->
+    <!--<h2><span th:text="${doctor.name}+' ' + ${doctor.surname}">DOCTOR</span></h2>-->
+    <!--</div>-->
 
-        <th scope="row" th:text="${itm.idCalls}"></th>
-        <td  th:text="${itm.dateOfCall}" ></td>
-        <td th:text="${itm.personal.name} "></td>
-        <td th:text="${itm.personal.surname}"></td>
-        <td th:text="${itm.personal.patronymic}"></td>
-        <td th:text="${itm.resultOfDoctorsCalls.rus_describe_result}"></td>
-        <td th:text="${itm.doctorsErrors.errorsCharacter}"></td>
-        <td  th:text="${itm.doctorsErrors.errorScale}"></td>
-        <td th:text="${itm.description_of_call}"></td>
+    <tr th:each="itm :${shifts}"  >
+
+        <th scope="row" th:text="${itm.idShifts}"></th>
+        <td   th:text="${itm.workDate}"></td>
+        <td   th:text="${itm.personal.name}"></td>
+        <td   th:text="${itm.personal.surname}"></td>
+        <td   th:text="${itm.personal.patronymic}"></td>
+        <td   th:text="${itm.shiftTypes.shiftName}"></td>
+        <td   th:text="${itm.shiftTypes.hoursQuantity}"></td>
+
 
 
     </tr>
 
     </tbody>
 </table>
-
 
 <ul class="nav nav-pills">
     <li class="nav-item">
@@ -189,16 +168,18 @@
         <a class="nav-link"   href="/zavotdpremium.html" th:href="@{/zavotdpremium}">Рассчитать премию</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link active" th:href="@{/errorsperiod}" href="/errorsperiod">Вызова с ошибками</a>
+        <a class="nav-link" th:href="@{/errorsperiod}" href="/errorsperiod">Вызова с ошибками</a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link"  href="/shift" th:href="@{/shift}">Смены</a>
+        <a class="nav-link active"  href="/shift" th:href="@{/shift}">Смены</a>
     </li>
     <li class="nav-item">
         <a class="nav-link " href="/" th:href="@{/}">Выйти</a>
     </li>
 </ul>
+
+
 
 </body>
 </html>
