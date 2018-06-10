@@ -62,10 +62,10 @@
 <header class=" top-bar js-top-bar _fixed">
 <!--<ul class="nav nav-tabs">-->
 
-    <!--<li role="presentation" class="active"><a href="#">Записать вызова</a></li>-->
-    <!--<li role="presentation"><a href="#">Отеты</a></li>-->
-    <!--<li role="presentation"><a href="#">Персонал</a></li>-->
-    <!--<li role="presentation"><a href="/" th:href="@{/}">Выйти</a></li>-->
+    <!--<li role1="presentation" class="active"><a href="#">Записать вызова</a></li>-->
+    <!--<li role1="presentation"><a href="#">Отеты</a></li>-->
+    <!--<li role1="presentation"><a href="#">Персонал</a></li>-->
+    <!--<li role1="presentation"><a href="/" th:href="@{/}">Выйти</a></li>-->
     <!--<h4> <span style="margin-left: 100px" th:text="Сегодня+'    '+${#dates.format(today,'dd MM yyyy')}">22/22/22</span></h4>-->
 <!--</ul>-->
 
@@ -79,7 +79,7 @@
                 <a class="nav-link"  href="/stvrpersonal" th:href="@{/stvrpersonal}">Персонал</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " th:href="@{#}" href="#">Отчеты</a>
+                <a class="nav-link " th:href="@{/getotchot}" href="/getotchot">Отчеты</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/" th:href="@{/}">Выйти</a>
@@ -199,7 +199,7 @@
 
     <div class="form-group">
         <div class="text-center">
-            <div style="margin-top: 60px" class="btn-group btn-group-lg" role="group" aria-label="...">
+            <div style="margin-top: 60px" class="btn-group btn-group-lg" role1="group" aria-label="...">
                 <button type="reset" class="btn btn-info"><i class="fa fa-remove"></i> Отмена</button>
                 <button class="btn btn-primary" type="submit">Записать вызов</button>
             </div>

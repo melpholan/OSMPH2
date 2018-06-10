@@ -50,7 +50,7 @@
 
 <div class="container" style="margin-left: 200px">
 
-    <form class="form-horizontal" action="/addcalltype" th:action="@{/addcalltype}" method="post" th:method="post">
+    <form class="form-horizontal" action="/adddescriberoupesult" th:action="@{/adddescriberoupesult}" method="get" th:method="get">
         <fieldset>
 
             <!-- Form Name -->
@@ -58,45 +58,28 @@
 
             <!-- Text input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="nameofcall">Тип вызова</label>
+                <label class="col-md-4 control-label" for="describeGroupResult">Группа типа вызова</label>
                 <div class="col-md-5">
-                    <input id="nameofcall" name="nameofcall" placeholder="" class="form-control input-md" required="" type="text" th:type="text">
-                    <span class="help-block"></span>
+                    <input id="describeGroupResult" name="describeGroupResult" placeholder="" class="form-control input-md" required="" type="text" th:type="text">
+                    <span class="help-block">Введите название группы</span>
                 </div>
             </div>
 
             <!-- Text input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="internalname">Введите внутреннее название типа</label>
+                <label class="col-md-4 control-label" for="nameOfGroupResults">Внутреннее имя</label>
                 <div class="col-md-5">
-                    <input id="internalname" name="internalname" placeholder="" class="form-control input-md" required=""   type="text">
-                    <span class="help-block"></span>
+                    <input id="nameOfGroupResults" name="nameOfGroupResults" placeholder="" class="form-control input-md" required=""   type="text">
+                    <span class="help-block">Английский</span>
                 </div>
             </div>
 
-            <div class="col-md-5 mb-3" style="margin-bottom:30px">
-
-                <label for="validationTooltip02">Группа вызова</label>
-                <div class="input-group">
-            <span class="input-group-addon"><i
-                    class="glyphicon glyphicon-list"></i></span>
-                    <select name="groupresult" roleId="awardPartner" id="validationTooltip02"
-                            class="form-control selectpicker">
-
-                        <option th:each="res : ${groupresultofcall}"
-                                th:value="${res.idGroupOfDoctorsCalls}"
-                                th:text="${res.describeGroupResult}"></option>
-                    </select>
-                    <span class="help-block">Введите группу типа вызова</span>
-                </div>
-
-
-                <!-- Button (Double) -->
+            <!-- Button (Double) -->
             <div class="form-group">
                 <label class="col-md-4 control-label" for="button1id"></label>
                 <div class="col-md-8">
-                    <button id="button1id" name="button1id" class="btn btn-info">Отмена</button>
-                    <button id="button2id" name="button2id" class="btn btn-primary">Добавить</button>
+                    <button type="reset" id="button1id" name="button1id" class="btn btn-info">Отмена</button>
+                    <button type="submit" id="button2id" name="button2id" class="btn btn-primary">Добавить</button>
                 </div>
             </div>
 

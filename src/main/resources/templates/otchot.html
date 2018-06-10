@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
 
@@ -17,23 +18,23 @@
     <script src= "/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
 
     <style>
-    h1{
-    font-size: 31px;
-    line-height: 40px;
-    font-weight: 600;
-    color:#4c5357;
-    }
-    h2{
-    color: #5e8396;
-    font-size: 21px;
-    line-height: 32px;
-    font-weight: 400;
+        h1{
+            font-size: 31px;
+            line-height: 40px;
+            font-weight: 600;
+            color:#4c5357;
+        }
+        h2{
+            color: #5e8396;
+            font-size: 21px;
+            line-height: 32px;
+            font-weight: 400;
 
 
-    }
+        }
     </style>
 
-
+</head>
 <body>
 <header class=" top-bar js-top-bar _fixed">
     <!--<ul class="nav nav-tabs">-->
@@ -52,10 +53,10 @@
                 <a class="nav-link disabled " href="/stvr" th:href="@{/stvr}">Главная</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active"  href="#" th:href="@{#}">Персонал</a>
+                <a class="nav-link"  href="/stvrpersonal" th:href="@{/stvrpersonal}">Персонал</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " th:href="@{/getotchot}" href="/getotchot">Отчеты</a>
+                <a class="nav-link active" th:href="@{/getotchot}" href="/getotchot">Отчеты</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/" th:href="@{/}">Выйти</a>
@@ -71,66 +72,77 @@
 
 <h1 style="margin-left:50px; margin-bottom: 50px; margin-top: 25px">Старший врач</h1>
 
+<!--<h2 style="margin-left:200px; margin-bottom: 50px; margin-top: 25px"><span th:text="${'Отчет за' + ${#dates.format(start,'dd MM yyyy')}+'    '+${#dates.format(finish,'dd MM yyyy')}"></span> </h2>-->
+<h2 style="margin-left:400px; margin-bottom: 50px; margin-top: 25px"><span  th:text="'Период с '+${#dates.format(start,'dd MM yyyy')}+' по '+${#dates.format(finish,'dd MM yyyy')}"></span> </h2>
+
+
+
+
+<p><h3><span style="margin-left: 400px" th:text="'Всего вызовов '+  ${summgroup}"></span></h3></p>
 <table class="table table-striped table-hover table-bordered">
+
+<h4 style="margin-left: 50px">
+    <label>Сводная таблица вызовов</label></h4>
 
     <thead class="thead thead-light">
 
     <tr>
 
-        <th scope="col">ID</th>
-        <th scope="col">Фамилия</th>
-        <th scope="col">Имя</th>
-        <th scope="col">Отчество</th>
+        <th scope="col">Группы ызовов</th>
+        <th scope="col">Количество</th>
 
     </tr>
     </thead>
     <tbody>
 
-    <!--<a th:href="@{/order/details/{id}/{action}(id=3,action='show_all')}">-->
+    <tr th:each="itm :${groupMap.keySet()}"  >
 
-    <tr th:each="itm :${personalList}">
+        <th scope="row" th:text="${itm}"></th>
 
-        <th scope="row" th:text="${itm.idPersonal}"></th>
-        <td > <a th:href="@{/stvraddress/{id}(id=${itm.idPersonal})}" th:text="${itm.name}"></a></td>
-        <td th:text="${itm.surname}"></td>
-        <td th:text="${itm.patronymic}"></td>
+        <td th:text="${groupMap.get(itm)}"></td>
 
     </tr>
 
     </tbody>
 </table>
 
-<!--<div class="container">-->
 
-<!--<form-->
+<h4 style="margin-left: 50px">
+<label>Таблица вызовов</label>
+</h4>
 
-<!--<div class="btn-group" role="group" aria-label="Basic example">-->
-<!--<button  <a th:href="@{/}" type="button" class="btn btn-secondary">>Выйти</a></button>-->
-<!--<button type="button" class="btn btn-secondary">Назад</button>-->
-
-<!--</div>-->
+<table class="table table-striped table-hover table-bordered">
 
 
-<!--</div>-->
 
-<ul class="nav nav-pills">
-    <li class="nav-item">
-        <a class="nav-link " href="/stvr" th:href="@{/stvr}">Домой</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link active disabled"   href="#" th:href="@{#}">Персонал</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" th:href="@{#}" href="#">Отчеты</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link " href="/" th:href="@{/}">Выйти</a>
-    </li>
-</ul>
+    <thead class="thead thead-light">
+
+    <tr>
+
+        <th scope="col">Вызова</th>
+        <th scope="col">Количество</th>
+
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr th:each="itm :${resMap.keySet()}"  >
+
+        <th scope="row" th:text="${itm}"></th>
+
+        <td th:text="${resMap.get(itm)}"></td>
 
 
-<script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+
+    </tr>
+
+    </tbody>
+</table>
+
+
+
+
+
 </body>
 </html>
-
-

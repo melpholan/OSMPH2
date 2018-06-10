@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface GroupResultRepo extends CrudRepository <GroupResultOfDoctorsCalls,Long> {
 
-//    List<GroupResultOfDoctorsCalls> findAllBy();
+
 }

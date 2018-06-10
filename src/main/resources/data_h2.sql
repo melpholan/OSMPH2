@@ -60,6 +60,7 @@ INSERT INTO Doctors_Errors(id_doctors_errors,  error_scales, errors_character) V
 INSERT INTO Doctors_Errors(id_doctors_errors,  error_scales, errors_character) VALUES (4,  3, 'В лечении без последствий');
 INSERT INTO Doctors_Errors(id_doctors_errors,  error_scales, errors_character) VALUES (5,  4, 'В лечении с вредом');
 INSERT INTO Doctors_Errors(id_doctors_errors,  error_scales, errors_character) VALUES (1,  0, 'нет');
+INSERT INTO Doctors_Errors(id_doctors_errors,  error_scales, errors_character) VALUES (6,  5, 'Летальный исход');
 
 
 INSERT INTO Group_Result_Of_Doctors_Calls(id_calls, name_of_group_results,describe_group_result) VALUES (1, 'deaths','Смерть');
@@ -4927,3 +4928,12 @@ INSERT INTO Shifts(work_date,  personal_id_personal, shift_types_id_shift_types)
 
 
 
+
+insert into accounts(name, role1,login, password1,surname, patronym,birthsday, dolznost) values(
+    'Федорчук',1,'admin','admin','Иван','Иванович','1967-10-11','Администратор');
+
+insert into accounts(name, role1,login, password1,surname, patronym,birthsday, dolznost) values(
+  'Федорчук',2,'zavotd','zavotd','Иван','Иванович','1967-10-11','Заведующий');
+
+insert into accounts(name, role1,login, password1,surname, patronym,birthsday, dolznost) values(
+  'Федорчук',3,'stvr','stvr','Иван','Иванович','1967-10-11','Старшийрач');

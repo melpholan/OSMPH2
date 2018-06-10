@@ -1,12 +1,14 @@
 package ru.melpholan.osmph2.controllers;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import ru.melpholan.osmph2.Reqform;
 import ru.melpholan.osmph2.model.UserAccounts;
+import ru.melpholan.osmph2.repo.AccountRepo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +16,10 @@ import java.util.List;
 @Controller
 //@RequestMapping("/")
 public class IndexController {
+
+
+    @Autowired
+    AccountRepo accountRepo;
 
     @GetMapping(value = "/")
     public ModelAndView regisr(){
@@ -38,8 +44,15 @@ public class IndexController {
             case "админ":
             case "Admin":
             case "Админ":
+            case "administrator":
 
             case "admin":
+            case "admin1":
+            case "admin2" +
+                    "" +
+                    "" +
+                    "" +
+                    "":
                 req = "admin";
                 break;
 
@@ -47,6 +60,10 @@ public class IndexController {
             case "Zavotd":
             case "Завотд":
             case "zavotd":
+            case "zav":
+            case "zo":
+            case "zavotd1":
+            case "zavotd2":
                 req = "zav";
                 break;
 
@@ -54,6 +71,8 @@ public class IndexController {
             case "Ствр":
             case "СтВр":
             case "stvr":
+            case "stvr1":
+            case "stvr2":
                 req = "stvr";
                 break;
 

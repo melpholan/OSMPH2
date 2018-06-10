@@ -48,17 +48,20 @@
 
 <div class="container" style="margin-left: 200px">
 
-    <form class="form-horizontal" >
+    <form class="form-horizontal" action="/createaccount" th:href="@{/createaccount}" method="post">
         <fieldset>
 
             <!-- Form Name -->
             <legend>Создание нового пользователя</legend>
 
+            <h2 style="margin-left: 400px; color: #761c19"><span th:text="${error}"></span> </h2>
+            <!--<h2 style="margin-left: 400px; color: #761c19"><span th:text="${newuser.name}"></span> </h2>-->
+
             <!-- Select Basic -->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="selectbasic">Роль</label>
+                <label class="col-md-4 control-label" for="role1">Роль</label>
                 <div class="col-md-6">
-                    <select id="selectbasic" name="selectbasic" class="form-control">
+                    <select id="role1" name="role1" class="form-control">
                         <option value="1">Администратор</option>
                         <option value="2">Старший врач</option>
                         <option value="3">Заведующий отделением</option>
@@ -68,9 +71,9 @@
 
             <!-- Text input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="textinput">Фамилия</label>
+                <label class="col-md-4 control-label" for="name">Фамилия</label>
                 <div class="col-md-8">
-                    <input id="textinput" name="textinput" placeholder="Фамилия" class="form-control input-md" required="" type="text">
+                    <input id="name" name="name" placeholder="Фамилия" class="form-control input-md" required="" type="text">
 
                 </div>
             </div>
@@ -86,54 +89,54 @@
 
             <!-- Text input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="te">Отчество</label>
+                <label class="col-md-4 control-label" for="patronym">Отчество</label>
                 <div class="col-md-8">
-                    <input id="te" name="te" placeholder="Дата рождения" class="form-control input-md" required="" type="text">
+                    <input id="patronym" name="patronym" placeholder="Дата рождения" class="form-control input-md" required="" type="text" >
 
                 </div>
             </div>
 
             <!-- Password input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="patronim">Дата рождения</label>
+                <label class="col-md-4 control-label" for="birthsday">Дата рождения</label>
                 <div class="col-md-8">
-                    <input id="patronim" type="date" name="patronim" placeholder="Отчество" class="form-control input-md" >
+                    <input id="birthsday" type="text" name="birthsday" placeholder="Дата рождения" class="form-control input-md" required >
 
                 </div>
             </div>
 
             <!-- Text input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="textinp">Должность</label>
+                <label class="col-md-4 control-label" for="dolznost">Должность</label>
                 <div class="col-md-8">
-                    <input id="textinp" name="textinp" placeholder="Должность" class="form-control input-md" required="" type="text">
+                    <input id="dolznost" name="dolznost" placeholder="Должность" class="form-control input-md" required="" type="text">
 
                 </div>
             </div>
 
             <!-- Text input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="texti">Логин</label>
+                <label class="col-md-4 control-label" for="login">Логин</label>
                 <div class="col-md-8">
-                    <input id="texti" name="texti" placeholder="Логин" class="form-control input-md" required="" type="text">
+                    <input id="login" name="login" placeholder="Логин" class="form-control input-md" required="" type="text">
 
                 </div>
             </div>
 
             <!-- Password input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="passwordinput">Пароль</label>
+                <label class="col-md-4 control-label" for="password">Пароль</label>
                 <div class="col-md-8">
-                    <input id="passwordinput" name="passwordinput" placeholder="Пароль" class="form-control input-md" required="" type="password">
+                    <input id="password" name="password" placeholder="Пароль" class="form-control input-md" required="" type="password1">
 
                 </div>
             </div>
 
             <!-- Password input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="passw">Повторить пароль</label>
+                <label class="col-md-4 control-label" for="password2">Повторить пароль</label>
                 <div class="col-md-8">
-                    <input id="passw" name="passw" placeholder="Пароль" class="form-control input-md" required="" type="password">
+                    <input id="password2" name="password2" placeholder="Пароль" class="form-control input-md" required="" type="password1">
 
                 </div>
             </div>
@@ -142,8 +145,8 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="button1id"></label>
                 <div class="col-md-8">
-                    <button id="button1id" name="button1id" class="btn btn-info">Отмена</button>
-                    <button id="button2id" name="button2id" class="btn btn-danger">Создать</button>
+                    <button id="button1id" type="reset" name="button1id" class="btn btn-info">Отмена</button>
+                    <button id="button2id" type="submit" name="button2id" class="btn btn-danger">Создать</button>
                 </div>
             </div>
 
